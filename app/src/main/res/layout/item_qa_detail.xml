@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/gap_3x"
+    android:paddingRight="@dimen/gap_3x"
+    android:paddingTop="@dimen/gap_3x">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_default_avatar"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="0dp"
+            app:civ_fill_color="#EEEEEE" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gap_2x"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_default"
+                    tools:text="小哥" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/rtv_member_type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/gap_2x"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="@dimen/gap_2x"
+                    android:paddingRight="@dimen/gap_2x"
+                    android:paddingTop="1dp"
+                    android:text="农民"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_hint"
+                    app:rv_backgroundColor="@color/light_light_blue"
+                    app:rv_cornerRadius="@dimen/gap_2x" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_answer_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_h3"
+                    android:textSize="@dimen/sp_weak"
+                    tools:text="2015-09-12 08:03:30" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:drawableLeft="@mipmap/ic_location_gray"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/common_h3"
+                    android:textSize="@dimen/sp_weak" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/rtv_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/gap"
+                android:layout_marginRight="3dp"
+                android:drawablePadding="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="@dimen/gap_2x"
+                android:paddingRight="@dimen/gap_2x"
+                android:paddingTop="2dp"
+                android:text="关注"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_small"
+                android:visibility="gone"
+                app:rv_cornerRadius="@dimen/gap_2x"
+                app:rv_strokeColor="@color/colorAccent"
+                app:rv_strokeWidth="1dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="55dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_default"
+            tools:text="学渣可恢复健康和恐惧家里快圣诞节福利来发送附件里撒风景了" />
+
+        <LinearLayout
+            android:id="@+id/ll_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/ic_laud"
+                android:drawablePadding="@dimen/gap"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/common_h3"
+                android:textSize="@dimen/sp_small"
+                tools:text="黄春梅、春风无意,、春风无意" />
+
+            <TextView
+                android:id="@+id/tv_names_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/common_h3"
+                android:textSize="@dimen/sp_small"
+                tools:text="等5人已赞" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_answer"
+                android:drawablePadding="@dimen/gap"
+                android:paddingBottom="@dimen/gap_2x"
+                android:paddingTop="@dimen/gap_2x"
+                android:text="评论"
+                android:textColor="@color/common_h3"
+                android:textSize="@dimen/sp_small" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:paddingLeft="@dimen/gap_3x"
+                android:src="@mipmap/ic_more" />
+        </FrameLayout>
+
+        <com.laoodao.smartagri.view.comment.CommentListView
+            android:id="@+id/commentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gap_2x"
+            android:background="@mipmap/bg_reply_bubbles"
+            android:paddingBottom="@dimen/gap_2x"
+            android:paddingLeft="@dimen/gap_2x"
+            android:paddingRight="@dimen/gap_2x"
+            android:paddingTop="@dimen/gap_4x" />
+
+
+        <include layout="@layout/widget_view_line" />
+
+
+    </LinearLayout>
+</LinearLayout>

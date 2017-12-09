@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:rv_backgroundColor="@color/transparent"
+    app:rv_cornerRadius="@dimen/gap_2x">
+
+    <com.flyco.roundview.RoundTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="企业性质"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_larger"
+        app:rv_backgroundColor="@color/colorAccent"
+        app:rv_cornerRadius_TL="@dimen/gap_2x"
+        app:rv_cornerRadius_TR="@dimen/gap_2x" />
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius_BL="@dimen/gap_2x"
+        app:rv_cornerRadius_BR="@dimen/gap_2x">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:layout_marginRight="@dimen/gap_3x" />
+    </com.flyco.roundview.RoundFrameLayout>
+</com.flyco.roundview.RoundLinearLayout>

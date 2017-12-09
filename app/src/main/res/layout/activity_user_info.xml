@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.UserInfoActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_line_gray"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_2x">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="头像"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_default_avatar" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/ic_right_arrow" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_3x"
+        android:background="@drawable/bg_white_line_gray"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="13045678911"
+            android:textColor="@color/common_h4"
+            android:textSize="@dimen/sp_weaker" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_line_gray"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="@dimen/gap"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:text="阿斯蒂芬"
+            android:textColor="@color/common_h4"
+            android:textSize="@dimen/sp_weaker" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_true_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_line_gray"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger" />
+
+        <TextView
+            android:id="@+id/tv_true_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="@dimen/gap"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:text="李大龙"
+            android:textColor="@color/common_h4"
+            android:textSize="@dimen/sp_weaker" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_line_gray"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:drawablePadding="@dimen/gap"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:text="保密"
+            android:textColor="@color/common_h4"
+            android:textSize="@dimen/sp_weaker" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_line_gray"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在地区"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gap_6x"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_horizontal"
+                android:drawablePadding="@dimen/gap"
+                android:drawableRight="@mipmap/ic_right_arrow"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/common_h4"
+                android:textSize="@dimen/sp_weaker"
+                tools:text="广东 东莞" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_line_gray"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人介绍"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gap_6x"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_autograph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_horizontal"
+                android:drawablePadding="@dimen/gap"
+                android:drawableRight="@mipmap/ic_right_arrow"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/common_h4"
+                android:textSize="@dimen/sp_weaker"
+                tools:text="你有没有通过李云龙" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_authentication_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_line_gray"
+        android:padding="@dimen/gap_3x">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认证信息"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_larger" />
+
+            <com.flyco.tablayout.widget.MsgView
+                android:id="@+id/msg_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:mv_backgroundColor="@color/red"
+                app:mv_isRadiusHalfHeight="true"
+                app:mv_strokeWidth="2dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_authentication_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="@dimen/gap"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_weaker"
+            tools:text="未认证" />
+    </FrameLayout>
+</LinearLayout>

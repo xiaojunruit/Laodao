@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/gap_5x"
+        android:paddingRight="@dimen/gap_5x"
+        android:paddingTop="@dimen/gap_3x">
+
+        <TextView
+            android:id="@+id/tv_time_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/gap_2x"
+            android:text="『2017年棉花交售』"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_2x"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:src="@mipmap/bg_like_enterprise" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:background="@drawable/bg_under_dotted_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="2016年，我最喜欢的棉花交售企业是"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_producer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:gravity="center_horizontal"
+            android:text="后台返回的公司"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:gravity="center_horizontal"
+            android:text="交售32次，总净重34224KG，棉花衣分平均35.6%"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

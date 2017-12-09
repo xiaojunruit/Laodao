@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <include layout="@layout/widget_view_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="我邀请的人数(个)"
+            android:layout_marginTop="@dimen/gap_3x"
+            android:textColor="@color/common_h3"
+            android:textSize="@dimen/sp_weak" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:gravity="center_horizontal"
+            android:text="-"
+            android:textColor="@color/light_red"
+            android:textSize="37sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#F7F7F7"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:orientation="horizontal">
+
+            <com.flyco.roundview.RoundTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/gap_2x"
+                android:paddingTop="@dimen/gap_2x"
+                android:text="用户名"
+                android:textColor="@color/common_h1"
+                app:rv_strokeColor="@color/common_divider_narrow"
+                app:rv_strokeWidth="1px" />
+
+            <com.flyco.roundview.RoundTextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/gap_2x"
+                android:paddingTop="@dimen/gap_2x"
+                android:text="邀请时间"
+                android:textColor="@color/common_h1"
+                app:rv_strokeColor="@color/common_divider_narrow"
+                app:rv_strokeWidth="1px" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

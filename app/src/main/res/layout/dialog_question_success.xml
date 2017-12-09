@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:rv_backgroundColor="@color/white"
+    app:rv_cornerRadius="@dimen/gap">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:layout_marginTop="@dimen/gap_3x">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/ic_close_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/ic_state_blue_su"
+            android:drawablePadding="@dimen/gap"
+            android:text="提问成功"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_title" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/gap_3x"
+        android:background="@mipmap/ic_integral_bg">
+
+        <LinearLayout
+            android:id="@+id/ll_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/violet" />
+
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10积分"
+                android:textColor="@color/violet"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/gap_3x"
+        android:text="有奖分享：分享劳道APP给你的好友，帮助"
+        android:textColor="@color/common_h3"
+        android:textSize="@dimen/sp_weak" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/gap"
+        android:text="  他人获得农业知识，你可获得更多积分"
+        android:textColor="@color/common_h3"
+        android:textSize="@dimen/sp_weak" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_wx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/gap_6x"
+            android:paddingTop="@dimen/gap_4x"
+            android:src="@mipmap/ic_wx" />
+
+        <ImageView
+            android:id="@+id/iv_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/gap_6x"
+            android:paddingTop="@dimen/gap_4x"
+            android:src="@mipmap/ic_friend" />
+
+        <ImageView
+            android:id="@+id/iv_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/gap_6x"
+            android:paddingTop="@dimen/gap_4x"
+            android:src="@mipmap/ic_qq" />
+
+        <ImageView
+            android:id="@+id/iv_qzone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/gap_6x"
+            android:paddingTop="@dimen/gap_4x"
+            android:src="@mipmap/ic_qzone" />
+    </LinearLayout>
+</com.flyco.roundview.RoundLinearLayout>

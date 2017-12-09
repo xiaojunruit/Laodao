@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_nature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x">
+
+        <TextView
+            android:id="@+id/tv_enterprise_nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="*企业性质:"
+            android:textColor="@color/common_h1" />
+
+        <TextView
+            android:id="@+id/tv_nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawablePadding="@dimen/gap"
+            android:drawableRight="@mipmap/ic_arrow_gray_right"
+            android:text="请选择"
+            android:textColor="@color/common_h3" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_dotted_line"
+        android:hapticFeedbackEnabled="false"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/tv_license"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        tools:text="*上传营业执照"
+        android:textColor="@color/common_h1" />
+
+    <ImageView
+        android:id="@+id/iv_license"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_business_license" />
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:id="@+id/rtv_add_expert_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_3x"
+        android:padding="@dimen/gap_2x"
+        app:rv_cornerRadius="2dp"
+        app:rv_strokeColor="@color/colorAccent"
+        app:rv_strokeWidth="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_add_blue"
+            android:drawablePadding="@dimen/gap"
+            android:text="点击选择上传图片"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_default" />
+    </com.flyco.roundview.RoundFrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/gap_2x"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/gap_2x">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/riv_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/bg_seize_seat" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/gap_2x"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_vertical"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:maxLines="1"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                tools:text="李云龙" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/rtv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/gap_2x"
+                android:paddingBottom="1dp"
+                android:paddingLeft="@dimen/gap_2x"
+                android:paddingRight="@dimen/gap_2x"
+                android:paddingTop="1dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_hint"
+                app:rv_backgroundColor="@color/light_light_blue"
+                app:rv_cornerRadius="@dimen/gap_2x"
+                tools:text="农民" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/tv_fans_total"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_weak"
+                tools:text="粉丝10000" />
+
+            <TextView
+                android:id="@+id/tv_wonder_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_weak"
+                tools:text="关注21" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/common_h2"
+            android:textSize="@dimen/sp_weak"
+            tools:text="难道本身可爱在于束缚难道本身可爱在于束缚" />
+
+        <com.flyco.roundview.RoundFrameLayout
+            android:id="@+id/rfl_follow"
+            android:layout_width="74dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|top"
+            app:rv_backgroundColor="@color/colorAccent"
+            app:rv_cornerRadius="@dimen/gap">
+
+            <TextView
+                android:id="@+id/tv_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/gap"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_default" />
+        </com.flyco.roundview.RoundFrameLayout>
+    </FrameLayout>
+</LinearLayout>

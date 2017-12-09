@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.discovery.activity.NewsActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="loading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_tab_height"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tl_indicator_color="@color/colorAccent"
+                    app:tl_indicator_corner_radius="1dp"
+                    app:tl_indicator_width_equal_title="true"
+                    app:tl_tab_padding="12dp"
+                    app:tl_textSelectColor="@color/colorAccent"
+                    app:tl_textUnselectColor="@color/common_h2"
+                    app:tl_textsize="@dimen/sp_middle"
+                    app:tl_underline_height="1px" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="30dp"
+                    android:background="@color/common_divider_narrow" />
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x"
+                    android:src="@mipmap/ic_add_blue" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/common_divider_narrow" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.ejz.multistateview.MultiStateView>
+</LinearLayout>

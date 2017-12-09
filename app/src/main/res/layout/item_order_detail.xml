@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1px"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/gap_3x">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="商品名称：发斯蒂芬发斯蒂芬发斯蒂芬发斯蒂芬"
+        android:textColor="@color/common_h2"
+        android:textSize="@dimen/sp_larger" />
+
+    <TextView
+        android:id="@+id/tv_specifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/gap"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="商品规格：40K"
+        android:textColor="@color/common_h2"
+        android:textSize="@dimen/sp_larger" />
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap"
+        android:text="价格：4654656464446464"
+        android:textColor="@color/common_h2"
+        android:textSize="@dimen/sp_larger" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap"
+        android:text="商品数量：2吨"
+        android:textColor="@color/common_h2"
+        android:textSize="@dimen/sp_larger" />
+
+    <TextView
+        android:id="@+id/tv_subtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap"
+        android:text="小计：54534"
+        android:textColor="@color/common_h2"
+        android:textSize="@dimen/sp_larger" />
+</LinearLayout>

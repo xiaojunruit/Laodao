@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.MyLoanActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gap_3x"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/gap_3x"
+            android:paddingTop="@dimen/gap_3x"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可用余额" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap_3x"
+                    android:text="￥"
+                    android:textColor="@color/light_red" />
+
+                <TextView
+                    android:id="@+id/tv_total_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap_3x"
+                    android:textColor="@color/light_red"
+                    android:textSize="30sp"
+                    tools:text="6665.66" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_surplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_2x"
+                android:textColor="@color/common_h4"
+                android:textSize="@dimen/sp_weak"
+                tools:text="总额度:10000000" />
+        </com.flyco.roundview.RoundLinearLayout>
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/btn_detail"
+            style="@style/Button.Round"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/gap_2x"
+            android:padding="@dimen/gap_2x"
+            android:text="查看明细"
+            android:textSize="@dimen/sp_larger" />
+
+    </RelativeLayout>
+</LinearLayout>

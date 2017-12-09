@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_gray_line_gray"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/gap_2x"
+    android:paddingTop="@dimen/gap_2x">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_h2"
+            tools:text="农业话费" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/Tv.LoanRecord"
+            tools:text="价格：5662464" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/Tv.LoanRecord"
+            android:layout_gravity="right"
+            tools:text="数量：100包" />
+
+        <TextView
+            android:id="@+id/tv_subtotal"
+            style="@style/Tv.LoanRecord"
+            android:layout_gravity="right"
+            tools:text="小计：51312316461" />
+    </LinearLayout>
+
+</LinearLayout>

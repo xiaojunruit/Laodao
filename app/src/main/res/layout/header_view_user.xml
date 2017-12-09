@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <FrameLayout
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/bg_avatar_shaow" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:src="@mipmap/ic_default_avatar"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="@dimen/gap" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#4C162cb2"
+                android:shadowDx="0"
+                android:shadowDy="5"
+                android:shadowRadius="1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_title" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap"
+                android:shadowColor="#4C162cb2"
+                android:shadowDx="0"
+                android:shadowDy="5"
+                android:shadowRadius="1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_larger" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_2x"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/gap_4x"
+        android:paddingTop="@dimen/gap_4x">
+
+        <LinearLayout
+            android:id="@+id/integral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的积分账户"
+                android:textColor="@color/common_h3"
+                android:textSize="@dimen/sp_weak" />
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tool:text="0"
+                android:textColor="@color/light_red"
+                android:textSize="@dimen/sp_micro_big_title" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/common_divider_narrow" />
+
+        <LinearLayout
+            android:id="@+id/my_loan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的贷款  (元)"
+                android:textColor="@color/common_h3"
+                android:textSize="@dimen/sp_weak" />
+
+            <TextView
+                android:id="@+id/tv_loan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tool:text="0.00"
+                android:textColor="@color/light_red"
+                android:textSize="@dimen/sp_micro_big_title" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

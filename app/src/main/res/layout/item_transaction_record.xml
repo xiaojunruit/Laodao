@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/trade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/touch_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/gap_3x"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_4x">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_larger"
+                tools:text="交易100000.00元" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/Tv.LoanRecord"
+                tools:text="交易时间2014-02-03 09:09:09" />
+
+            <TextView
+                android:id="@+id/tv_trade_num"
+                style="@style/Tv.LoanRecord"
+                tools:text="交易编号：2654613646564654" />
+        </LinearLayout>
+
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_pay"
+            style="@style/IconButton.custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/gap"
+            android:paddingRight="@dimen/gap"
+            android:paddingTop="3dp"
+            android:text="去付款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_weaker"
+            app:rv_backgroundColor="@color/light_red"
+            app:rv_cornerRadius="30dp" />
+
+        <TextView
+            android:id="@+id/tv_state_su"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/gap"
+            android:drawableTop="@mipmap/ic_state_blue_su"
+            android:text="成功"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+    <LinearLayout
+        android:id="@+id/trade_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingRight="@dimen/gap_3x">
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            style="@style/Tv.LoanRecord"
+            tools:text="门店名称：味道农资店" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_store_controller"
+                style="@style/Tv.LoanRecord"
+                tools:text="门店负责人：阿斯蒂芬" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/Tv.LoanRecord"
+                android:layout_gravity="right"
+                tools:text="联系电话：4446465464" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/gap_2x">
+
+            <TextView
+                android:id="@+id/tv_trade_money"
+                style="@style/Tv.LoanRecord"
+                tools:text="交易金额：300000000" />
+
+            <TextView
+                android:id="@+id/tv_discount_money"
+                style="@style/Tv.LoanRecord"
+                android:layout_gravity="right"
+                tools:text="优惠：100" />
+        </FrameLayout>
+
+        <include layout="@layout/widget_view_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_trade_total"
+            style="@style/Tv.LoanRecord"
+            android:layout_gravity="right"
+            tools:text="合计：54616466464" />
+    </LinearLayout>
+</LinearLayout>

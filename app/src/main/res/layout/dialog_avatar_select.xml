@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius_TL="@dimen/gap"
+        app:rv_cornerRadius_TR="@dimen/gap">
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="拍照"
+            android:textColor="@color/common_h1"
+            android:textSize="16sp" />
+    </com.flyco.roundview.RoundFrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/common_divider_narrow" />
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:id="@+id/btn_photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius_BL="@dimen/gap"
+        app:rv_cornerRadius_BR="@dimen/gap">
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="从相册选择"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </com.flyco.roundview.RoundFrameLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/gap_2x"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="取消"
+        android:textColor="@color/common_h1"
+        android:textSize="16sp"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius="@dimen/gap" />
+</LinearLayout>

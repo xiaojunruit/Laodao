@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择作物"
+            android:textColor="@color/common_h1" />
+
+        <EditText
+            android:id="@+id/et_crop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:background="@null"
+            android:hint="输入作物名称"
+            android:textColorHint="@color/default_hint"
+            android:textSize="@dimen/sp_default" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+    <EditText
+        android:id="@+id/et_farmland_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gap_3x"
+        android:background="@null"
+        android:gravity="left"
+        android:hint="上传农田照片并添加描述"
+        android:lines="4"
+        android:textSize="@dimen/sp_default" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_3x"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_choose_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_camera_" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农田面积"
+            android:textColor="@color/common_h1" />
+
+        <EditText
+            android:id="@+id/et_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:background="@null"
+            android:hint="请输入农田面积"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/default_hint"
+            android:textSize="@dimen/sp_default" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+    <LinearLayout
+        android:id="@+id/btn_choose_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农田位置"
+            android:textColor="@color/common_h1" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:background="@null"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:gravity="right"
+            android:textColorHint="@color/default_hint"
+            android:textSize="@dimen/sp_default" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+    <EditText
+        android:id="@+id/et_address_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gap_3x"
+        android:background="@null"
+        android:gravity="left"
+        android:hint="请输入详细地址"
+        android:lines="3"
+        android:textSize="@dimen/sp_default" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/rtv_commit"
+        style="@style/Button.Round"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/gap_3x"
+        android:padding="@dimen/gap_2x"
+        android:text="确认提交" />
+</LinearLayout>

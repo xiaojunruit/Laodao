@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.discovery.activity.TruthQueryActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/gap_2x"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:layout_marginRight="@dimen/gap_3x"
+                android:layout_marginTop="@dimen/gap_2x"
+                android:orientation="vertical"
+                app:rv_backgroundColor="@color/white"
+                app:rv_backgroundPressColor="@color/common_touch_bg"
+                app:rv_cornerRadius="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/ic_search_gray"
+                    android:drawablePadding="@dimen/gap"
+                    android:gravity="center"
+                    android:text="请输入搜索内容"
+                    android:textColor="@color/common_h3"
+                    android:textSize="@dimen/sp_weaker" />
+
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/ll_pesticides"
+                    style="@style/Discovery.Group">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/ic_pesticides" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="农药"
+                            android:textColor="@color/selector_accent_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/gap"
+                            android:text="登记证号查询"
+                            android:textColor="@color/selector_accent_h3"
+                            android:textSize="@dimen/sp_weak" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:id="@+id/ll_fertilizer"
+                    style="@style/Discovery.Group">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_fertilizer" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="肥料"
+                                android:textColor="@color/selector_accent_h1"
+                                android:textSize="@dimen/sp_larger" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/gap"
+                                android:text="登记证号查询"
+                                android:textColor="@color/selector_accent_h3"
+                                android:textSize="@dimen/sp_weak" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:layout_marginRight="@dimen/gap_3x"
+                android:background="@color/common_divider_narrow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/ll_seed"
+                    style="@style/Discovery.Group">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/ic_seed" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="种子"
+                            android:textColor="@color/selector_accent_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/gap"
+                            android:text="审定编号查询"
+                            android:textColor="@color/selector_accent_h3"
+                            android:textSize="@dimen/sp_weak" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:id="@+id/ll_microbial_fertilizer"
+                    style="@style/Discovery.Group">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_microbial_fertilizer" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="微生物肥料"
+                                android:textColor="@color/selector_accent_h1"
+                                android:textSize="@dimen/sp_larger" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/gap"
+                                android:text="登记证号查询"
+                                android:textColor="@color/selector_accent_h3"
+                                android:textSize="@dimen/sp_weak" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/gap_2x"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/gap_3x"
+                android:paddingRight="@dimen/gap_3x">
+
+                <EditText
+                    android:id="@+id/et_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@null"
+                    android:hint="登记证号"
+                    android:maxLines="1"
+                    android:textColorHint="@color/common_h3"
+                    android:textSize="@dimen/sp_weaker" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <EditText
+                    android:id="@+id/et_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@null"
+                    android:hint="企业名称"
+                    android:textColorHint="@color/common_h3"
+                    android:textSize="@dimen/sp_weaker" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <EditText
+                    android:id="@+id/etactive_ingredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@null"
+                    android:hint="有效成分"
+                    android:textColorHint="@color/common_h3"
+                    android:textSize="@dimen/sp_weaker" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <EditText
+                    android:id="@+id/et_crop"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@null"
+                    android:hint="防治作物"
+                    android:textColorHint="@color/common_h3"
+                    android:textSize="@dimen/sp_weaker" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tv_submit"
+                    style="@style/Button.Round"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="59dp"
+                    android:gravity="center"
+                    android:padding="@dimen/gap_2x"
+                    android:text="查询"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_larger"
+                    app:rv_backgroundColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/gap_3x"
+                    android:layout_marginTop="11dp"
+                    android:text="本数据来源于国家农业部，每月三十日数据更新。"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_weak" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

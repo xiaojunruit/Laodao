@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.UpdateNickNameActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:hint="请输入昵称"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/gap_3x" />
+
+    <TextView
+        android:id="@+id/tv_clues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_3x"
+        android:text=""
+        android:textColor="@color/common_h3" />
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.qa.activity.AskActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/gap_3x"
+                android:paddingRight="@dimen/gap_3x">
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_white_line_gray"
+                    android:hint="填写标题"
+                    android:singleLine="false"
+                    android:textSize="@dimen/sp_default"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="详细描述你的疑问..."
+                    android:paddingTop="@dimen/gap_2x"
+                    android:singleLine="false"
+                    android:textSize="@dimen/sp_default" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gap_3x"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/iv_choose_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_camera" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_line_gray"
+                android:drawableLeft="@mipmap/ic_positioning"
+                android:drawablePadding="@dimen/gap"
+                android:padding="@dimen/gap_2x"
+                android:text="定位中..."
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gap_2x"
+                android:background="@color/background" />
+
+            <LinearLayout
+                android:id="@+id/ll_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/gap_3x">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="作物分类"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_larger" />
+
+                <TextView
+                    android:id="@+id/tv_plant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/gap_2x"
+                    android:layout_weight="1"
+                    android:hint="请选择作物分类"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_weak" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+
+    <LinearLayout
+        style="@style/Padding"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:background="@drawable/bg_white_line_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_phone" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入帐号或手机号码"
+            android:paddingLeft="@dimen/gap_2x"
+            android:singleLine="true"
+            android:textColor="@color/common_h1"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Padding"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:background="@drawable/bg_white_line_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_password" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/gap_2x"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_weak" />
+
+        <ImageView
+            android:id="@+id/btn_show_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/gap_2x"
+            android:paddingRight="@dimen/gap_2x"
+            android:src="@drawable/selector_eyes" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginTop="@dimen/gap_3x"
+        android:text="关联后，你的QQ账户和劳道账户都可以登录"
+        android:textColor="@color/common_h3"
+        android:textSize="@dimen/sp_weaker" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_larger"
+        app:rv_backgroundColor="@color/colorAccent" />
+
+</LinearLayout>

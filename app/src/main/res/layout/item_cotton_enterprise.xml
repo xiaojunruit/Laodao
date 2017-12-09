@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/gap_3x"
+    android:paddingLeft="@dimen/gap_3x"
+    android:paddingTop="@dimen/gap_3x">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中棉集团玛纳斯棉业有限公司"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="65001"
+            android:textColor="@color/colorPrimary" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_location_blue"
+        android:drawablePadding="@dimen/gap"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="昌吉州 玛纳斯县北五岔镇当家庄村"
+        android:textColor="@color/common_h3"
+        android:textSize="@dimen/sp_weak" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人:  销售量" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_8x"
+            android:layout_weight="1"
+            android:text="电话:  1331234568" />
+
+    </LinearLayout>
+</LinearLayout>

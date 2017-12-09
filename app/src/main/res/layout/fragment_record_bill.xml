@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:cb="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="@color/background"--><!--android:orientation="vertical"--><!--android:paddingLeft="@dimen/gap_3x"--><!--android:paddingRight="@dimen/gap_3x"--><!--android:paddingTop="@dimen/gap_3x">-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_3x">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="『2016年已经过去了"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/gap_3x"
+                android:text="您的棉田账单还是一笔糊涂账么？』"
+                android:textColor="@color/colorAccent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/gap_3x"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_cotton" />
+
+            <TextView
+                android:id="@+id/tv_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_3x"
+                android:text="@string/record_bill_default"
+                android:textColor="@color/colorAccent" />
+
+            <com.flyco.roundview.RoundFrameLayout
+                android:id="@+id/id_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_3x"
+                app:rv_backgroundColor="@color/white"
+                app:rv_cornerRadius="3dp">
+
+                <EditText
+                    android:id="@+id/et_id_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+                    android:hint="请输入您的身份证号码"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/gap_2x"
+                    android:textColorHint="@color/default_hint"
+                    android:textSize="@dimen/sp_default" />
+            </com.flyco.roundview.RoundFrameLayout>
+
+            <LinearLayout
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.flyco.roundview.RoundFrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap_2x"
+                    android:layout_weight="1"
+                    app:rv_backgroundColor="@color/white"
+                    app:rv_cornerRadius="3dp">
+
+                    <EditText
+                        android:id="@+id/et_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:hint="请输入验证码"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/gap_2x"
+                        android:textColorHint="@color/default_hint"
+                        android:textSize="@dimen/sp_default" />
+                </com.flyco.roundview.RoundFrameLayout>
+
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/gap_3x">
+
+                    <WebView
+                        android:id="@+id/webview_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tv_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/gap_4x"
+                    android:gravity="center"
+                    android:text="开启我的棉田账单"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_larger"
+                    app:rv_backgroundColor="@color/colorAccent"
+                    app:rv_cornerRadius="3dp" />
+
+                <com.laoodao.smartagri.view.LineProgressBar
+                    android:id="@+id/line_progresbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/gap_3x"
+                    android:visibility="gone"
+                    app:lineborderWidth="2dp"
+                    app:lineprogressColor="@color/colorAccent"
+                    app:progressDesc="%"
+                    app:progressRadius="14dp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/gap_3x"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/gap"
+            android:text="劳道"
+            android:textColor="@color/common_h1"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="农业也可以很幸福"
+            android:textColor="@color/common_h3"
+            android:textSize="@dimen/sp_weaker"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView><!--</LinearLayout>-->

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        app:msv_viewState="content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/UI.Group"
+                        android:paddingLeft="@dimen/gap_3x">
+
+                        <TextView
+                            android:id="@+id/tv_types"
+                            style="@style/UI.Tv"
+                            android:text="求购类型" />
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            style="@style/UI.Et"
+                            android:gravity="center_vertical"
+                            android:hint="请选择求购类型" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/ic_right_arrow" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/gap_2x"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/gap_3x">
+
+                        <LinearLayout style="@style/UI.Group">
+
+                            <TextView
+                                android:id="@+id/tv_title"
+                                style="@style/UI.Tv"
+                                android:text="标题" />
+
+                            <EditText
+                                android:id="@+id/et_title"
+                                style="@style/UI.Et"
+                                android:hint="请输入标题(50字以内)"
+                                android:maxLength="50"
+                                android:maxLines="3" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/type_second"
+                            style="@style/UI.Group">
+
+                            <TextView
+                                android:id="@+id/tv_type_seconds"
+                                style="@style/UI.Tv"
+                                android:text="类型" />
+
+                            <TextView
+                                android:id="@+id/tv_type_second"
+                                style="@style/UI.Et"
+                                android:gravity="center_vertical"
+                                android:hint="请输入您需要求购的商品类型" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_price"
+                            style="@style/UI.Group"
+                            android:visibility="visible">
+
+                            <TextView
+                                style="@style/UI.Tv"
+                                android:paddingLeft="@dimen/gap_2x"
+                                android:text="价格" />
+
+                            <EditText
+                                android:id="@+id/et_price"
+                                style="@style/UI.Et"
+                                android:hint="请输入价格(元)"
+                                android:inputType="numberDecimal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_amount"
+                            style="@style/UI.Group">
+
+                            <TextView
+                                style="@style/UI.Tv"
+                                android:inputType="number"
+                                android:paddingLeft="@dimen/gap_2x"
+                                android:text="数量" />
+
+                            <EditText
+                                android:id="@+id/et_amount"
+                                style="@style/UI.Et"
+                                android:hint="请输入您需要求购的数量" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_acreage"
+                            style="@style/UI.Group"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/UI.Tv"
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="@dimen/gap_2x"
+                                android:text="面积" />
+
+                            <EditText
+                                android:id="@+id/et_acreage"
+                                style="@style/UI.Et"
+                                android:hint="请输入您需要求购的土地面积" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_contactor"
+                            style="@style/UI.Group">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                style="@style/UI.Tv"
+                                android:text="姓名" />
+
+                            <EditText
+                                android:id="@+id/et_contactor"
+                                style="@style/UI.Et"
+                                android:hint="请输入您的姓名" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/UI.Group">
+
+
+                            <TextView
+                                android:id="@+id/tv_phone"
+                                style="@style/UI.Tv"
+                                android:text="联系电话" />
+
+                            <EditText
+                                android:id="@+id/et_contacmobile"
+                                style="@style/UI.Et"
+                                android:hint="请输入您的联系电话"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/UI.Group">
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                style="@style/UI.Tv"
+                                android:text="所在地区" />
+
+                            <TextView
+                                android:id="@+id/tv_area"
+                                style="@style/UI.Et"
+                                android:gravity="center_vertical"
+                                android:text="定位中..." />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_right_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/gap_2x"
+                        android:background="@color/white">
+
+                        <EditText
+                            android:id="@+id/et_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="left"
+                            android:hint="补充求购说明..."
+
+                            android:padding="@dimen/gap_3x"
+                            android:textSize="@dimen/sp_weaker" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/btn_commit"
+                    style="@style/Button.Round"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/gap_2x"
+                    android:padding="@dimen/gap_2x"
+                    android:text="提交发布"
+                    android:textSize="@dimen/sp_larger" />
+            </LinearLayout>
+        </ScrollView>
+    </com.ejz.multistateview.MultiStateView>
+</LinearLayout>
+
+

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/gap_3x"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="选择地区"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_title" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gap_2x">
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="7dp"
+            android:paddingLeft="@dimen/gap_2x"
+            android:paddingRight="@dimen/gap_2x"
+            android:paddingTop="7dp"
+            app:rv_backgroundColor="@color/background"
+            app:rv_cornerRadius="2dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_search_gray" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap"
+                android:background="@null"
+                android:hint="输入城市名或拼音查询"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_default" />
+
+        </com.flyco.roundview.RoundLinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="LinearLayoutManager" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tv_overlay"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:rv_backgroundColor="#88000000"
+                    app:rv_cornerRadius="@dimen/gap" />
+            </FrameLayout>
+
+            <com.laoodao.smartagri.view.cityselector.widget.SideLetterBar
+                android:id="@+id/side"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="@color/transparent" />
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/result_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layoutManager="LinearLayoutManager" />
+
+        <TextView
+            android:id="@+id/tv_no_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/gap_3x"
+            android:text="搜索无结果~"
+            android:textSize="@dimen/sp_larger"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

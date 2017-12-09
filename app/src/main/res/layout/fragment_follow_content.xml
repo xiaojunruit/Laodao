@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <!--<com.flyco.roundview.RoundTextView-->
+    <!--android:id="@+id/tv_crop"-->
+    <!--style="@style/IconButton.custom"-->
+    <!--android:layout_width="68dp"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginRight="80dp"-->
+    <!--android:layout_marginTop="@dimen/gap_2x"-->
+    <!--android:gravity="center"-->
+    <!--android:text="切换作物"-->
+    <!--android:textColor="@color/white"-->
+    <!--app:rv_backgroundColor="#40A1D9"-->
+    <!--app:rv_cornerRadius="30dp" />-->
+
+    <LinearLayout
+        android:id="@+id/no_follow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bg_load_error" />
+
+        <TextView
+            android:id="@+id/tv_error_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:text="" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_follow"
+            style="@style/IconButton.custom"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_4x"
+            android:gravity="center"
+            android:paddingBottom="@dimen/gap_2x"
+            android:paddingTop="@dimen/gap_2x"
+            android:text="十   添加关注"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_larger"
+            app:rv_cornerRadius="50dp"
+            app:rv_strokeColor="@color/colorAccent"
+            app:rv_strokeWidth="1px" />
+    </LinearLayout>
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="loading">
+
+        <com.ejz.xrecyclerview.XRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="41dp" />
+
+        <LinearLayout
+            android:id="@+id/follow_crop"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/select_recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_add_crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gap"
+                android:src="@mipmap/ic_add_crop" />
+
+            <!--<com.flyco.roundview.RoundTextView-->
+            <!--android:id="@+id/tv_add_crop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="7dp"-->
+            <!--android:layout_marginRight="@dimen/gap"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingLeft="@dimen/gap_2x"-->
+            <!--android:paddingRight="@dimen/gap_2x"-->
+            <!--android:text="+"-->
+            <!--android:textSize="@dimen/sp_big_title"-->
+            <!--android:textColor="@color/white"-->
+            <!--app:rv_backgroundColor="@color/colorAccent"-->
+            <!--app:rv_isRadiusHalfHeight="true" />-->
+        </LinearLayout>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="7dp"-->
+        <!--android:paddingRight="@dimen/gap_3x"-->
+        <!--android:paddingTop="7dp">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/select_recyclerview"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1" />-->
+
+        <!--<com.flyco.roundview.RoundTextView-->
+        <!--android:id="@+id/tv_add_crop"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="@dimen/gap_2x"-->
+        <!--android:paddingRight="@dimen/gap_2x"-->
+        <!--android:text="+"-->
+        <!--android:textColor="@color/white"-->
+        <!--app:rv_backgroundColor="@color/colorAccent"-->
+        <!--app:rv_isRadiusHalfHeight="true" />-->
+        <!--</LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_divider_narrow" />
+
+
+    </com.ejz.multistateview.MultiStateView>
+
+
+</FrameLayout>

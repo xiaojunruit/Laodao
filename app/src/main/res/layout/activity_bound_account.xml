@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.BoundAccountActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:background="@drawable/touch_bg"
+        android:gravity="center_vertical"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="手机号码"
+            android:textSize="@dimen/sp_larger" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="@dimen/gap_2x"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:text=""
+            android:textColor="@color/common_h3"
+            android:textSize="@dimen/sp_weaker" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow"/>
+    <FrameLayout
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/touch_bg"
+        android:gravity="center_vertical"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="修改密码"
+            android:textSize="@dimen/sp_larger" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@mipmap/ic_right_arrow" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_4x"
+        android:paddingLeft="@dimen/gap_3x"
+        android:text="其他登录方式"
+        android:textColor="@color/colorAccent" />
+
+
+    <LinearLayout
+        android:id="@+id/wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:background="@drawable/touch_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/gap_3x">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_wx" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/gap_2x"
+            android:text="微信"
+            android:textSize="@dimen/sp_larger" />
+
+        <TextView
+            android:id="@+id/tv_wx_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/gap_2x"
+            android:text="未绑定"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_right_arrow" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow"/>
+    <LinearLayout
+        android:id="@+id/qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/touch_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/gap_3x">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_qq" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/gap_2x"
+            android:text="QQ"
+            android:textSize="@dimen/sp_larger" />
+        <TextView
+            android:id="@+id/tv_qq_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未绑定"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="@dimen/gap_2x"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_right_arrow" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gap_3x"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="价格行情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_title" />
+
+
+        <RelativeLayout
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolbarHeight"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/gap_3x"
+            android:paddingRight="@dimen/gap_3x">
+
+            <TextView
+                android:id="@+id/tv_my_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我的关注"
+                android:textColor="@color/white" />
+
+            <com.flyco.tablayout.widget.MsgView
+                android:id="@+id/msg_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@+id/tv_my_follow"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/img_msg"
+                android:gravity="center"
+                android:visibility="invisible"
+                app:mv_backgroundColor="@color/red"
+                app:mv_isRadiusHalfHeight="true"
+                app:mv_strokeWidth="2dp" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/gap_2x"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:orientation="vertical"
+        app:rv_backgroundColor="@color/white"
+        app:rv_backgroundPressColor="@color/common_touch_bg"
+        app:rv_cornerRadius="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_search_gray"
+            android:drawablePadding="@dimen/gap"
+            android:gravity="center"
+            android:text="请输入搜索内容"
+            android:textColor="@color/common_h3"
+            android:textSize="@dimen/sp_weaker" />
+
+    </com.flyco.roundview.RoundLinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="loading">
+
+        <com.ejz.xrecyclerview.XRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </com.ejz.multistateview.MultiStateView>
+</LinearLayout>

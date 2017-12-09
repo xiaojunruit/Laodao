@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/gap_3x"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/gap_2x">
+
+        <TextView
+            android:id="@+id/tv_problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gap_2x"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger"
+            tools:text="问题描述" />
+
+        <include layout="@layout/widget_view_line" />
+
+        <EditText
+            android:id="@+id/et_mark"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="请描述遇到的问题，以便我们及时为您解决"
+            android:maxLength="300" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="请输入5~300个字"
+            android:textColor="@color/default_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_contact_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="联系方式"
+            android:textColor="@color/common_h1" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_commit"
+        style="@style/Padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gap_3x"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_larger"
+        app:rv_backgroundColor="@color/colorAccent"
+        app:rv_cornerRadius="3dp" />
+
+</LinearLayout>

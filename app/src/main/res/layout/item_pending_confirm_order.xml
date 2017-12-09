@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/gap_2x"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/gap_3x">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/gap_3x"
+        android:paddingLeft="@dimen/gap_2x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_3x">
+
+        <CheckBox
+            android:id="@+id/cb_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/gap_2x"
+                android:drawableRight="@mipmap/ic_right_arrow"
+                android:text="小贾农资门店"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_larger" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下单时间：2017-05-02"
+            android:textColor="@color/common_h3" />
+    </LinearLayout>
+
+    <include layout="@layout/widget_view_line" />
+
+    <TextView
+        android:id="@+id/tv_order_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="订单号码：4984987465494"
+        android:textSize="@dimen/sp_larger" />
+
+    <TextView
+        android:id="@+id/tv_order_total_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="订单总额：498498元"
+        android:textSize="@dimen/sp_larger" />
+
+    <TextView
+        android:id="@+id/tv_actual_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="实付金额：49849元"
+        android:textSize="@dimen/sp_larger" />
+
+    <TextView
+        android:id="@+id/tv_pending_repayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="待还款金额：0.00元"
+        android:textSize="@dimen/sp_larger" />
+</LinearLayout>

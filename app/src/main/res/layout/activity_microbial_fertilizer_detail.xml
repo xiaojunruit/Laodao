@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <com.ejz.multistateview.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:msv_viewState="loading">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="登记证号"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="@color/common_h1"
+                        tools:text="微生物肥（2016）临字（3389）号" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="企业名称"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/common_h1"
+                        tools:text="沈阳国科生物科技有限公司" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="企业法人"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_entity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/common_h1"
+                        tools:text="微生物肥（2016）临字（3389）号" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="通用名称"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_common_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="@color/common_h1"
+                        tools:text="微生物肥（2016）临字（3389）号" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x"
+                    android:textColor="@color/common_h1">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="商品名称"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="@color/common_h1"
+                        tools:text="微生物肥（2016）临字（3389）号" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="产品形态"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_product_form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="@color/common_h1"
+                        tools:text="微生物肥（2016）临字（3389）号" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="技术指标"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_qualification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:textColor="@color/common_h1"
+                        tools:text="微生物肥（2016）临字（3389）号" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="适宜作物"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_crop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/common_h1"
+                        tools:text="小白菜" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="登记证有效期"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_expiry_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/common_h1"
+                        tools:text="微生物肥（2016）临字（3389）号" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.ejz.multistateview.MultiStateView>
+    </ScrollView>
+</LinearLayout>

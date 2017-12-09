@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <com.ejz.multistateview.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:msv_viewState="loading">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="作物种类"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="小麦"
+                        android:textColor="@color/common_h1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="品种名称"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_variety"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="邯麦17"
+                        android:textColor="@color/common_h1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="审定编号"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:text="国审麦201612"
+                        android:textColor="@color/common_h1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="审定年份"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="2016"
+                        android:textColor="@color/common_h1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="审定单位"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_organization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="农业部"
+                        android:textColor="@color/common_h1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="申请单位"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="邯郸市农业科学院"
+                        android:textColor="@color/common_h1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="申请来源"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/common_h1"
+                        tools:text="小麦" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="是否转基因"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <TextView
+                        android:id="@+id/tv_transgenosis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:text="否"
+                        android:textColor="@color/common_h1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:drawableLeft="@mipmap/ic_bule"
+                    android:drawablePadding="@dimen/gap"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:text="特征特性"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_larger" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <TextView
+                    android:id="@+id/tv_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/gap_3x"
+                    android:textColor="@color/common_h2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:drawableLeft="@mipmap/ic_bule"
+                    android:drawablePadding="@dimen/gap"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:text="产品表现"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_larger" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <TextView
+                    android:id="@+id/tv_feature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/gap_3x"
+                    android:textColor="@color/common_h2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:background="@drawable/bg_white_line_gray"
+                    android:drawableLeft="@mipmap/ic_bule"
+                    android:drawablePadding="@dimen/gap"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:text="适宜种植区"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_larger" />
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/gap_3x"
+                    android:textColor="@color/common_h2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:background="@drawable/bg_white_line_gray"
+                    android:drawableLeft="@mipmap/ic_bule"
+                    android:drawablePadding="@dimen/gap"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:text="实验情况"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_larger" />
+
+                <TextView
+                    android:id="@+id/tv_yield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/gap_3x" />
+
+            </LinearLayout>
+
+
+        </com.ejz.multistateview.MultiStateView>
+
+    </ScrollView>
+
+</LinearLayout>

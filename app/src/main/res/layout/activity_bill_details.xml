@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tool:context=".ui.farmland.activity.AccountDetailActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:background="@color/white"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记账金额"
+            android:textColor="@color/common_h1" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/common_h1"
+            tool:text="0.00" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:background="@color/common_divider_narrow" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分类"
+            android:textColor="@color/common_h1" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/common_h1"
+            tool:text="支出" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:background="@color/common_divider_narrow" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记账时间"
+            android:textColor="@color/common_h1" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/common_h1"
+            tool:text="2017.04.17 15:06" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:background="@color/common_divider_narrow" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tool:text="添加备注"
+            android:textColor="@color/common_h1" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            app:riv_corner_radius="3dp"
+            tool:src="@mipmap/ic_test" />
+    </FrameLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/rtv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:layout_marginTop="@dimen/gap_5x"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="编辑"
+        android:textColor="@color/colorPrimary"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius="3dp"
+        app:rv_strokeColor="@color/colorPrimary"
+        app:rv_strokeWidth="1px" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/rtv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="删除"
+        android:textColor="@color/colorPrimary"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius="3dp"
+        app:rv_strokeColor="@color/colorPrimary"
+        app:rv_strokeWidth="1px" />
+</LinearLayout>

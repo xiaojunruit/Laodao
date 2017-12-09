@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/gap_2x"
+    android:paddingLeft="@dimen/gap_3x"
+    android:paddingRight="@dimen/gap_3x"
+    android:paddingTop="@dimen/gap_2x">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/riv_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_seize_seat" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/gap_2x"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/gap"
+            android:drawableRight="@mipmap/ic_authentication"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:maxLines="1"
+            android:text="李大龙的第一家农资店李大龙的第一家农资店李大龙的第一家农资店"
+            android:textColor="@color/common_h1" />
+
+        <LinearLayout
+            android:id="@+id/ll_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <!--<com.flyco.roundview.RoundTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="2dp"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:paddingRight="8dp"-->
+            <!--android:paddingTop="2dp"-->
+            <!--android:text="农膜"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/sp_hint"-->
+            <!--app:rv_backgroundColor="@color/light_light_blue"-->
+            <!--app:rv_cornerRadius="@dimen/gap_2x" />-->
+
+
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundFrameLayout
+            android:id="@+id/rfl_follow"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            app:rv_backgroundColor="@color/colorAccent"
+            app:rv_cornerRadius="@dimen/gap_4x">
+
+            <TextView
+                android:id="@+id/tv_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/gap"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_weaker" />
+        </com.flyco.roundview.RoundFrameLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

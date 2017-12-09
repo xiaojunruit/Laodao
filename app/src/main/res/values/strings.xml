@@ -1,0 +1,353 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!--<string name="app_name">劳道</string>-->
+
+    <string-array name="homt_tab">
+        <item>首页</item>
+        <item>问答</item>
+        <item>发现</item>
+        <item>供求</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="market_tab">
+        <item>求购</item>
+        <item>供销</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="release_tab">
+        <item>发布的求购</item>
+        <item>发布的供销</item>
+    </string-array>
+    <string-array name="browse_tab">
+        <item>求购</item>
+        <item>供销</item>
+    </string-array>
+    <string-array name="collection_tab">
+        <item>求购</item>
+        <item>供销</item>
+    </string-array>
+
+    <string-array name="MyFarmland_tab">
+        <item>支出</item>
+        <item>收入</item>
+    </string-array>
+
+    <string-array name="user_message">
+        <item>通知</item>
+        <item>回复</item>
+        <item>动态</item>
+    </string-array>
+    <string-array name="crop_detail_tab_layout">
+        <item>最新药剂</item>
+        <item>我有绝活</item>
+    </string-array>
+
+    <string-array name="market_menu">
+        <item>分类</item>
+        <item>地区</item>
+        <item>发布日期</item>
+    </string-array>
+
+    <string-array name="price_quotation_menu">
+        <item>作物</item>
+        <item>地区</item>
+        <item>发布日期</item>
+    </string-array>
+
+    <string-array name="homt_tab_selected_icon">
+        <item>@mipmap/ic_home_selected</item>
+        <item>@mipmap/ic_answer_selected</item>
+        <item>@mipmap/ic_discover_selected</item>
+        <item>@mipmap/ic_market_selected</item>
+        <item>@mipmap/ic_user_selected</item>
+    </string-array>
+
+    <string-array name="homt_tab_unselected_icon">
+        <item>@mipmap/ic_home_unselected</item>
+        <item>@mipmap/ic_answer_unselected</item>
+        <item>@mipmap/ic_discover_unselected</item>
+        <item>@mipmap/ic_market_unselected</item>
+        <item>@mipmap/ic_user_unselected</item>
+    </string-array>
+
+    <string-array name="loan_record_array">
+        <item>贷款记录</item>
+        <item>交易记录</item>
+    </string-array>
+
+    <string-array name="farming_capital_array">
+        <item>我的订单</item>
+        <item>我的还款记录</item>
+    </string-array>
+
+    <string-array name="qa_array">
+        <item>最新</item>
+        <item>关注内容</item>
+        <item>我的问答</item>
+    </string-array>
+
+    <string-array name="qa_tablayout">
+        <item>我的提问</item>
+        <item>我的回答</item>
+        <item>想知道答案</item>
+        <item>我的关注</item>
+    </string-array>
+
+    <string-array name="payment_history_array">
+        <item>还款待确认</item>
+        <item>还款已确认</item>
+    </string-array>
+
+    <string-array name="my_order_array">
+        <item>全部</item>
+        <item>欠款</item>
+        <item>还款中</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="sex_array">
+        <item>保密</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="dialog_btn_array">
+        <item>取消</item>
+        <item>确定</item>
+    </string-array>
+
+    <string-array name="cotton_query">
+        <item>上报信息</item>
+        <item>企业信息</item>
+    </string-array>
+    <string-array name="cotton_query_result">
+        <item>正常企业</item>
+        <item>黑名单企业</item>
+    </string-array>
+    <string-array name="time_dialog">
+        <item>2015</item>
+        <item>2016</item>
+    </string-array>
+
+    <string-array name="user_collection">
+        <item>问答</item>
+        <item>求购</item>
+        <item>供销</item>
+    </string-array>
+
+
+    <string name="update_nick_name">4-20个字符，可由中英文、数字、“-”、“_”组成</string>
+    <string name="please_input_username">请输入用户名</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_confirm_password">请输入确认密码</string>
+    <string name="please_input_phone">请输入手机号</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="please_input_nickname">请输入昵称</string>
+    <string name="please_input_correct_password_format">请输入正确的密码格式</string>
+    <string name="please_input_true_nickname">请输入正确的昵称格式</string>
+    <string name="please_input_crop_name">请输入作物名称</string>
+    <string name="please_input_disease_name">请输入病害名称</string>
+    <string name="please_input_unique">请输入绝活</string>
+    <string name="not_logged_in">未登录</string>
+    <string name="_0_500">%1$s/500</string>
+    <string name="sex_title">修改性别</string>
+    <string name="invite_num">邀请人数：%1$s</string>
+    <string name="loan_num">合同编号：%1$s</string>
+    <string name="loan_name">姓名：%1$s</string>
+    <string name="loan_id_card">身份证：%1$s</string>
+    <string name="phone">电话：%1$s</string>
+    <string name="loan_money">贷款金额：￥%1$s</string>
+    <string name="loan_purpose">贷款用途：%1$s</string>
+    <string name="loan_appointed_time">约定偿还日期：%1$s</string>
+    <string name="loan_interest">贷款利息：%1$s</string>
+    <string name="loan_bank_name">放款账号银行名称：%1$s</string>
+    <string name="loan_account">放贷账号：%1$s</string>
+    <string name="loan_statistics">统计号：%1$s</string>
+    <string name="loan_state_desc">处理状态：%1$s</string>
+    <string name="loan_total_money">贷款：%1$s</string>
+    <string name="loan_state">贷款%1$s</string>
+    <string name="loan_time">贷款时间：%1$s</string>
+    <string name="position">位置：%1$s</string>
+    <string name="consumption">累计花费：￥%1$s</string>
+    <string name="spend">花费：%1$s</string>
+    <string name="farmland_name">%1$s地</string>
+    <string name="farmland_area">%1$s亩</string>
+    <string name="please_perfect_info">请完善信息</string>
+    <string name="required">带 * 为必填项</string>
+    <string name="farmland_location">位置：%1$s</string>
+    <string name="trade">交易 %1$s</string>
+    <string name="trade_time">交易时间：%1$s</string>
+    <string name="trade_num">交易编号：%1$s</string>
+    <string name="store_name">门店名称：%1$s</string>
+    <string name="store_controller">门店负责人：%1$s</string>
+    <string name="trade_money">交易金额：%1$s</string>
+    <string name="contact_phone">联系电话：%1$s</string>
+    <string name="contact_information">联系方式：%1$s</string>
+    <string name="discount">优惠：%1$s</string>
+    <string name="total">合计：%1$s</string>
+    <string name="subtotal">小计：%1$s</string>
+    <string name="price">价格：￥%1$s</string>
+    <string name="price_no_symbol">价格：%1$s</string>
+    <string name="mobile_phone">手机：%1$s</string>
+    <string name="goods_single_price">商品单价：%1$s元/%2$s</string>
+    <string name="return_goods_single_price">退货单价：%1$s元/%2$s</string>
+    <string name="num">数量：%1$s</string>
+    <string name="integral_record">积分记录</string>
+    <string name="use_record">使用记录</string>
+    <string name="yyyy_M_dd">%1$s年%2$s月</string>
+    <string name="signed">已签到，赚更多</string>
+    <string name="answer_count">回答%1$s</string>
+    <string name="browse_count">浏览%1$s</string>
+    <string name="money_symbol">￥%1$s</string>
+    <string name="sign_in">签到</string>
+    <string name="sign_in_days">已连续签到%1$s天</string>
+    <string name="cancel_want_to_kown">取消想知道答案</string>
+    <string name="i_want_to_kown">我也想知道答案</string>
+    <string name="wonder_answer_num">　%1$s人想知道答案</string>
+    <string name="wonder_answer_num_more">　等%1$s人想知道答案</string>
+    <string name="release_at_time">发表于%1$s</string>
+    <string name="add_at_time">添加于%1$s</string>
+    <string name="comment_total">%1$s条评论</string>
+    <string name="browse">浏览%1$s次</string>
+    <string name="mu">%1$s亩</string>
+    <string name="read_count">%1$s人阅读</string>
+    <string name="replay">回复</string>
+    <string name="comment_count">评论%1$s</string>
+    <string name="unfollow">取消关注</string>
+    <string name="follow_question">关注此问题</string>
+    <string name="follow_price">关注</string>
+    <string name="praise">   赞  </string>
+    <string name="praised">   取消赞  </string>
+    <string name="comment_txt">评论</string>
+    <string name="praised_count">等%1$s人已赞</string>
+    <string name="view_total">已有%1$s人浏览</string>
+    <string name="distance_my">距离您大约%1$s公里</string>
+    <string name="add_time">发布于%1$s</string>
+    <string name="view">浏览%1$s次</string>
+    <string name="release_time">发布时间:%1$s</string>
+    <string name="joint_name">尊敬的%1$s用户：%2$s</string>
+    <string name="selected_plant_text">&#160;&#160;%1$s&#160;&#160;</string>
+    <string name="max_select_crop">最多选择5种作物</string>
+    <string name="bind_account">关联后，你的%1$s账户和劳道账户都可以登录</string>
+    <string name="today">今天%1$s</string>
+    <string name="yesterday">昨天%1$s</string>
+    <string name="member_name">%1$s等%2$s人 回答了您的提问</string>
+    <string name="order_num">订单号码：%1$s</string>
+    <string name="order_total_money">订单总额：￥%1$s</string>
+    <string name="order_total_money_no">订单总额：%1$s</string>
+    <string name="order_total_money_and_discount"><![CDATA[订单总额：<font color="#FF0000">%1$s</font>元]]></string>
+    <string name="order_prefere_money"><![CDATA[(已优惠：<font color="#999999">%1$s</font>元)]]></string>
+    <string name="order_discount_money"><![CDATA[(已折扣：<font color="#999999">%1$s</font>折)]]></string>
+    <string name="actual_money"><![CDATA[已付金额：<font color="#ff5655">￥%1$s</font>]]></string>
+    <string name="repayment"><![CDATA[待还款金额：<font color="#FAB333">￥%1$s</font>]]></string>
+    <string name="repayment_no"><![CDATA[待还款金额：<font color="#FAB333">%1$s</font>元]]></string>
+    <string name="unpaid"><![CDATA[未付金额：<font color="#FAB333">￥%1$s</font>]]></string>
+    <string name="arrears_money"><![CDATA[尚欠金额：<font color="#FAB333">￥%1$s</font>]]></string>
+    <string name="surplus_arrears">待欠款金额：￥%1$s</string>
+    <string name="sale_time">销售日期：%1$s</string>
+    <string name="skip">跳过%1$s</string>
+    <string name="goods_name">商品名称：%1$s</string>
+    <string name="goods_num">商品数量：%1$s%2$s</string>
+    <string name="goods_specifications">商品规格：%1$s</string>
+    <string name="subtotal_red"><![CDATA[小计：<font color="#ff5655">%1$s</font>元]]></string>
+    <string name="order_state"><![CDATA[订单状态：<font color="#0081cc">%1$s</font>]]></string>
+    <string name="update_time">更新时间：%1$s</string>
+    <string name="total_money">总额度：%1$s元</string>
+    <string name="temperature">%1$s°</string>
+    <string name="return_goods_sn">退款单号：%1$s</string>
+    <string name="return_goods_money"><![CDATA[退款金额：<font color="#ff5655">%1$s</font>元]]></string>
+    <string name="return_goods_exempt_money"><![CDATA[(还款抹零：<font color="#FAB333">%1$s</font>元)]]></string>
+    <string name="refund_goods_exempt_money"><![CDATA[(退款抹零：<font color="#FAB333">%1$s</font>元)]]></string>
+    <string name="return_goods_actual_money"><![CDATA[实退金额：<font color="#FAB333">%1$s</font>元]]></string>
+    <string name="sale_num">销售单号：%1$s</string>
+    <string name="sale_total_money"><![CDATA[销售订单总额：<font color="#ff5655">%1$s</font>元]]></string>
+    <string name="returned_purchase">退货单号：%1$s</string>
+    <string name="returned_purchase_total_money"><![CDATA[退货总额：<font color="#ff5655">%1$s</font>元]]></string>
+    <string name="return_goods_time">退货日期：%1$s</string>
+    <string name="pending_payment"><![CDATA[还款总额：<font color="#ff5655">%1$s</font>]]></string>
+    <string name="pending_pay"><![CDATA[待支付金额：<font color="#ff5655">%1$s</font>]]></string>
+    <string name="payment_history_time">还款日期：%1$s</string>
+    <string name="single_repayment_money">本次还款金额：%1$s</string>
+    <string name="repayments_money"><![CDATA[已还款金额：<font color="#ff5655">%1$s</font>元]]></string>
+    <string name="repayment_money"><![CDATA[还款金额：<font color="#ff5655">%1$s</font>元]]></string>
+    <string name="repayment_mode"><![CDATA[还款方式：账户余额(<font color="#ff5655">%1$s</font>元) 现金(<font color="#ff5655">%2$s</font>元)]]></string>
+
+    <string name="market_type"><![CDATA[<font color="#FF0000">* </font>求购类型]]></string>
+    <string name="market_title"><![CDATA[<font color="#FF0000">* </font>标题]]></string>
+    <string name="market_type_second"><![CDATA[<font color="#FF0000">* </font>类型]]></string>
+    <string name="market_name"><![CDATA[<font color="#FF0000">* </font>姓名]]></string>
+    <string name="market_phone"><![CDATA[<font color="#FF0000">* </font>联系电话]]></string>
+    <string name="market_address"><![CDATA[<font color="#FF0000">* </font>所在地区]]></string>
+    <string name="market_acreage"><![CDATA[<font color="#FF0000">* </font>面积]]></string>
+    <string name="market_supply_type"><![CDATA[<font color="#FF0000">* </font>供销类型]]></string>
+    <string name="prevention_method"><![CDATA[<font color="#0081cc">防止方法：</font>%1$s]]></string>
+    <string name="ask_title">标题不能为空</string>
+    <string name="ask_content">内容不能为空</string>
+
+    <string name="plant_place"><![CDATA[<font color="#333646">棉花种植地点: </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="crop_plant_area"><![CDATA[<font color="#333646">棉花种植净面积(亩): </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="cotton_plant_area"><![CDATA[<font color="#333646">陆地棉种植净面积(亩): </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="cotton_avg"><![CDATA[<font color="#333646">三年平均单产(公斤/亩): </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="specotton_plant_area"><![CDATA[<font color="#333646">特种棉种植净面积(亩): </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="specotton_avg"><![CDATA[<font color="#333646">三年平均单产(公斤/亩): </font><font color="common_h2">%1$s</font>]]></string>
+
+
+    <string name="firm_name"><![CDATA[<font color="#333646">交售扎花厂名称: </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="net_weigh"><![CDATA[<font color="#333646">净重(公斤): </font><font color="#0081cc">%1$s</font>]]></string>
+    <string name="ginturnout"><![CDATA[<font color="#333646">衣份(%%): </font><font color="#0081cc">%1$s</font>]]></string>
+    <string name="cotton_type"><![CDATA[<font color="#333646">棉花类型: </font><font color="#0081cc">%1$s</font>]]></string>
+    <string name="weigh_date"><![CDATA[<font color="#333646">交售时间: </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="first_up_time"><![CDATA[<font color="#333646">创建时间: </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="up_time"><![CDATA[<font color="#333646">更新时间: </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="cotton_state"><![CDATA[<font color="#333646">状态: </font><font color="#0081cc">%1$s</font>]]></string>
+    <string name="verification_code"><![CDATA[验证码<font color="#FF0000">* </font>]]></string>
+    <string name="id_number"><![CDATA[身份证号码<font color="#FF0000">* </font>]]></string>
+    <string name="contactperson"><![CDATA[<font color="#333646">联系人: </font><font color="common_h2">%1$s</font>]]></string>
+    <string name="html_phone"><![CDATA[<font color="#333646">电话: </font><font color="common_h2">%1$s</font>]]></string>
+
+    <string name="cotton_bill_guide_1">看棉田账单\n做明白人</string>
+    <string name="cotton_bill_guide_2">2016\n您的棉田账单还记得吗？\n共交售了多少公斤\n交给了哪些企业?\n没关系\n劳道帮您记得</string>
+    <string name="record_bill_success">您的账单已生成，赶快来看看吧~</string>
+    <string name="record_bill_loading">您的棉田账单正在生成中，请耐心等待</string>
+    <string name="record_bill_fail">非常抱歉，您的棉田年度账单生成失败。\n姿势不对，换个姿势再试一次</string>
+    <string name="record_bill_default">请输入身份信息开启您的2016年棉花账单</string>
+    <string name="per_year"><![CDATA[交售<big>%1$s</big>次，共<big>%2$s</big>kg棉籽，占全年交售总额的<big>%3$s</big>%%]]></string>
+    <string name="top_net_weigh"><![CDATA[衣分含量 <font color="#0081cc"><big><big><big>%1$s</big></big></big></font>净重<font color="#0081cc"><big><big><big>%2$s</big></big></big></font>kg]]></string>
+    <string name="com_net_weigh"><![CDATA[籽棉交售<font color="#0081cc">%1$s</font>次%2$s净重<font color="#0081cc">%3$s</font>kg]]></string>
+    <string name="inviting_friends_mark1">这一年，与%1$s个棉花交售企业发生交易</string>
+    <string name="inviting_friends_mark2">交售总重%1$skg</string>
+    <string name="transaction_num"><![CDATA[<font color="#0081cc"><big>%1$s</big></font>次]]></string>
+    <string name="net_weight"><![CDATA[<font color="#2EB7A9"><big>%1$s</big></font>kg]]></string>
+    <string name="lint_percentage"><![CDATA[<font color="#62C98C"><big>%1$s</big></font>]]></string>
+    <string name="enterprise_num"><![CDATA[<font color="#E86044"><big>%1$s</big></font>个]]></string>
+    <string name="company_kg">%1$skg</string>
+    <string name="record_mark1"><![CDATA[%1$s 衣分含量<font color="#0081cc"><big><big>%2$s </big></big></font> 净重<font color="#0081cc"><big><big>%3$s</big></big></font>kg]]></string>
+    <string name="today_offer"><![CDATA[<font color="#ff5655"><big>%1$s</big></font>元/公斤]]></string>
+    <string name="cotton_content">棉花衣分含量：%1$s</string>
+    <string name="address">地址：%1$s</string>
+    <string name="management_goods">经营商品：%1$s</string>
+
+
+    <string name="new_price"><![CDATA[<font color="#ff5655"><big>%1$s</big></font>元 / 公斤]]></string>
+    <string name="new_price_blue"><![CDATA[<font color="#0081cc"><big>%1$s</big></font>元 / 公斤]]></string>
+
+    <string name="serch"><![CDATA[搜索:<font color="#0081cc"><big>%1$s</big></font>]]></string>
+
+    <string name="problem"><![CDATA[<font color="#FF0000">* </font>问题描述（至少5字）]]></string>
+    <string name="notes_contact_information"><![CDATA[<font color="#FF0000">* </font>联系方式：]]></string>
+    <string name="integrity"><![CDATA[资料完善度<font color="#0081cc">%1$s&#037</font>，请尽快去完善]]></string>
+    <string name="mutual_concern">关注  %1$s  |  </string>
+    <string name="fans">粉丝  %1$s</string>
+    <string name="follow">关注%1$s</string>
+    <string name="reply_problem"><![CDATA[%1$s<font color="#666666">回复了问题</font>]]></string>
+    <string name="contacts">联系人：%1$s</string>
+    <string name="true_name"><![CDATA[<font color="#ff5655">*</font>真实姓名:]]></string>
+    <string name="identity"><![CDATA[<font color="#ff5655">*</font>请选择认证身份:]]></string>
+    <string name="enterprise_nature"><![CDATA[<font color="#ff5655">*</font>企业性质:]]></string>
+    <string name="license"><![CDATA[<font color="#ff5655">*</font>上传营业执照]]></string>
+    <string name="field"><![CDATA[<font color="#ff5655">*</font>擅长领域]]></string>
+    <string name="crop"><![CDATA[<font color="#ff5655">*</font>擅长作物]]></string>
+    <string name="id_card"><![CDATA[<font color="#ff5655">*</font>上传身份证]]></string>
+
+
+</resources>

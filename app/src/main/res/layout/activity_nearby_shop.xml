@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ejz.multistateview.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:msv_viewState="loading">
+
+            <com.ejz.xrecyclerview.XRecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.ejz.multistateview.MultiStateView>
+
+        <LinearLayout
+            android:id="@+id/no_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bg_load_error" />
+
+            <TextView
+                android:id="@+id/tv_error_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_2x"
+                android:gravity="center"
+                android:text="定位失败" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tv_follow"
+                style="@style/IconButton.custom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_4x"
+                android:gravity="center"
+                android:paddingBottom="@dimen/gap_2x"
+                android:paddingTop="@dimen/gap_2x"
+                android:text="重试"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_larger"
+                app:rv_cornerRadius="50dp"
+                app:rv_strokeColor="@color/colorAccent"
+                app:rv_strokeWidth="1px" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

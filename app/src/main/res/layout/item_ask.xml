@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/gap_3x">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            app:civ_fill_color="#EEEEEE"
+            tools:src="@mipmap/ic_default_avatar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gap_2x"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="小明"
+                    android:textColor="@color/common_h1" />
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@mipmap/ic_share2" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:text="2015-02-02"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_weak" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:drawableLeft="@mipmap/ic_location_gray"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_weak"
+                    tools:text="东莞市" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="这是标题"
+            android:textColor="@color/text_black"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.1"
+            android:maxLines="3"
+            android:text="这是容这是容这是内内这是内容这是内容这是内容这是内容这是容这是容这是内内这是内容这是内容这是内容这是内容"
+            android:textColor="@color/common_h2"
+            android:textSize="@dimen/sp_default" />
+
+
+        <com.laoodao.smartagri.view.ninegridimage.NineGridImageView
+            android:id="@+id/grid_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:visibility="visible"
+            app:imgGap="3dp"
+            app:maxSize="3"
+            app:showStyle="fill"
+            app:singleImgHeight="200dp"
+            app:singleImgWidth="400dp" />
+
+        <LinearLayout
+
+            android:id="@+id/ll_want_to_konw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_wonder_answer_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/gap"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_weak" />
+
+            <TextView
+                android:id="@+id/tv_wonder_answer_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="等99人想知道答案"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_weak" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_leaving"
+                android:drawablePadding="@dimen/gap"
+                android:gravity="center"
+                android:paddingTop="@dimen/gap_2x"
+                android:text="回答"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_weak" />
+
+            <!--<CheckBox-->
+            <!--android:id="@+id/cb_follow"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/gap_6x"-->
+            <!--android:button="@drawable/selector_collected"-->
+            <!--android:paddingLeft="@dimen/gap"-->
+            <!--android:text="收藏"-->
+            <!--android:textColor="@color/common_h2" />-->
+
+            <TextView
+                android:id="@+id/tv_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:drawableLeft="@drawable/selector_follow"
+                android:drawablePadding="@dimen/gap"
+                android:gravity="center"
+                android:paddingLeft="@dimen/gap_3x"
+                android:paddingRight="@dimen/gap_3x"
+                android:paddingTop="@dimen/gap_2x"
+                android:text="收藏"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_weak" />
+
+            <TextView
+                android:id="@+id/tv_browse_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:drawableLeft="@mipmap/ic_preview"
+                android:drawablePadding="@dimen/gap"
+                android:gravity="center"
+                android:paddingTop="@dimen/gap_2x"
+                android:text="浏览101"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_weak" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/gap"
+                android:paddingLeft="@dimen/gap_2x"
+                android:src="@mipmap/ic_more"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

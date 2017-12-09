@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:rv_backgroundColor="@color/white"
+    app:rv_cornerRadius="@dimen/gap">
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/gap"
+        android:paddingTop="@dimen/gap_5x"
+        android:text="您输入的验证码错误!"
+        android:textColor="@color/common_h1" />
+
+    <TextView
+        android:id="@+id/tv_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="请重新输入"
+        android:textColor="@color/common_h1" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/rtv_determine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_4x"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_title"
+        app:rv_backgroundColor="@color/colorPrimary"
+        app:rv_cornerRadius_BL="@dimen/gap"
+        app:rv_cornerRadius_BR="@dimen/gap" />
+
+</com.flyco.roundview.RoundLinearLayout>

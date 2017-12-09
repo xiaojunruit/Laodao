@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="@dimen/gap_2x">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                tools:text="『2016年9月18』" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_2x"
+                android:src="@mipmap/bg_lint_percentage_highest" />
+
+            <TextView
+                android:id="@+id/tv_top_net_weigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_3x"
+                tools:text="衣分含量37.2%净重1322kg" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="70dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/rtv_early_gin_turnout"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        app:rv_isRadiusHalfHeight="true"
+                        app:rv_isWidthHeightEqual="true"
+                        app:rv_strokeColor="@color/black"
+                        app:rv_strokeWidth="1dp"
+                        tools:text="37.5%" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|bottom"
+                        android:background="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="90dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="···"
+                        android:textColor="@color/black"
+                        app:rv_backgroundColor="@color/colorAccent"
+                        app:rv_isRadiusHalfHeight="true"
+                        app:rv_isWidthHeightEqual="true"
+                        app:rv_strokeColor="@color/black"
+                        app:rv_strokeWidth="1dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|bottom"
+                        android:background="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/trv_top_gin_turnout"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        app:rv_isRadiusHalfHeight="true"
+                        app:rv_isWidthHeightEqual="true"
+                        app:rv_strokeColor="@color/black"
+                        app:rv_strokeWidth="1dp"
+                        tools:text="41.5%" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|bottom"
+                        android:background="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="···"
+                        android:textColor="@color/black"
+                        app:rv_backgroundColor="@color/colorAccent"
+                        app:rv_isRadiusHalfHeight="true"
+                        app:rv_isWidthHeightEqual="true"
+                        app:rv_strokeColor="@color/black"
+                        app:rv_strokeWidth="1dp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|bottom"
+                        android:background="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="90dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/rtv_last_gin_turnout"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        app:rv_isRadiusHalfHeight="true"
+                        app:rv_isWidthHeightEqual="true"
+                        app:rv_strokeColor="@color/black"
+                        app:rv_strokeWidth="1dp"
+                        tools:text="41.5%" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|bottom"
+                        android:background="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.laoodao.smartagri.view.DrawView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_early_weight_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/black"
+                tools:text="2016.09.08" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="..."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_top_weight_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/black"
+                tools:text="2016.09.08" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="..."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_last_weight_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="@color/black"
+                tools:text="2016.09.08" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/aqua"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sell_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                tools:text="全年交售棉籽65次" />
+
+            <TextView
+                android:id="@+id/tv_weight_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                tools:text="393790kg" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/gap_2x"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="棉花衣分平均"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_average_gin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                tools:text="42.2%" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

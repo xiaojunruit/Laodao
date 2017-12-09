@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingLeft="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:riv_border_color="@color/common_divider_narrow"
+            app:riv_border_width="1px"
+            app:riv_corner_radius="3dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_image"
+            android:padding="@dimen/gap_2x"
+            android:text="啊啊啊"
+            android:textColor="@color/common_h1" />
+
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/gap_4x"
+            android:src="@mipmap/ic_focus_add" />
+    </RelativeLayout>
+    <View
+        android:background="@drawable/bg_dotted_line_gray"
+        android:layout_width="match_parent"
+        android:layerType="software"
+        android:layout_height="1dp"/>
+</LinearLayout>

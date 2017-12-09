@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/gap_3x">
+
+                <ImageView
+                    android:id="@+id/iv_type"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_arrangement_soil" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/gap_2x"
+                    android:text="整地"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_big_title" />
+
+                <EditText
+                    android:id="@+id/et_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="0.00"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_big_title" />
+            </LinearLayout>
+
+            <include layout="@layout/widget_view_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <include layout="@layout/widget_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="添加备注"
+                    android:minHeight="100dp"
+                    android:padding="@dimen/gap_3x"
+                    android:textColor="@color/common_h1"
+                    android:textColorHint="@color/common_h1" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gap_3x"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:layout_marginRight="@dimen/gap_3x"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/img_recyclerview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/iv_choose_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/ic_camera_" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <include layout="@layout/widget_view_line" />
+
+            <TextView
+                android:id="@+id/tv_calendar"
+                style="@style/Tv.weak"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:layout_marginTop="@dimen/gap_2x"
+                android:background="@color/background"
+                android:paddingBottom="@dimen/gap"
+                android:paddingLeft="@dimen/gap_2x"
+                android:paddingRight="@dimen/gap_2x"
+                android:paddingTop="@dimen/gap"
+                android:text="2017-02-02" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

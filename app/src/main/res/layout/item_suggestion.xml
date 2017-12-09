@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.flyco.roundview.RoundTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_suggestion"
+    style="@style/Button.Round.TAB"
+    android:layout_marginLeft="0dp"
+    android:text="功能异常" />

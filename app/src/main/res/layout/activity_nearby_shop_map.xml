@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/ic_location"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_the_bull_seye" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@mipmap/ic_error_red"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="报错" />
+
+        <com.flyco.roundview.RoundFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius_TL="20dp"
+            app:rv_cornerRadius_TR="20dp">
+
+            <com.flyco.roundview.RoundFrameLayout
+                android:layout_width="100dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                app:rv_backgroundColor="@color/background"
+                app:rv_cornerRadius="10dp" />
+        </com.flyco.roundview.RoundFrameLayout>
+    </FrameLayout>
+
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius_TL="20dp"
+        app:rv_cornerRadius_TR="20dp">
+
+        <ImageView
+            android:id="@+id/iv_shop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/gap_2x"
+            android:layout_marginLeft="50dp"
+            android:src="@mipmap/point_grey" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/gap_2x"
+            android:layout_marginLeft="@dimen/gap_2x"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这是农资店的名称"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_larger" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:drawablePadding="@dimen/gap"
+                android:drawableLeft="@mipmap/ic_location_blue"
+                android:text="广东省东莞市广东省东莞市广东省东莞市"
+                android:textColor="@color/common_h3"
+                android:textSize="@dimen/sp_weak" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/gap_2x">
+
+            <ImageView
+                android:id="@+id/iv_call_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/ic_share_map_blue" />
+        </FrameLayout>
+    </com.flyco.roundview.RoundLinearLayout>
+</LinearLayout>

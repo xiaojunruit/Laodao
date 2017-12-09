@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:layout_marginTop="@dimen/gap_4x"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/bg_cotton_bill" />
+
+
+                    <TextView
+                        android:id="@+id/tv_frequency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="@color/common_h1"
+                        tools:text="18次" />
+
+                    <TextView
+                        android:id="@+id/tv_net_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="@color/common_h1"
+                        tools:text="18kg" />
+
+                    <TextView
+                        android:id="@+id/tv_enterprise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="@color/common_h1"
+                        tools:text="18个" />
+
+                    <TextView
+                        android:id="@+id/tv_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="@color/common_h1"
+                        tools:text="18" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/bg_under_dotted_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_total_company_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap_4x"
+                    android:text="这一年，与23个棉花交售企业发生交易"
+                    android:textColor="@color/common_h2" />
+
+                <TextView
+                    android:id="@+id/tv_weight_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap_2x"
+                    android:text="交售总额1234234kg"
+                    android:textColor="@color/common_h2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap_2x"
+                    android:text="此时，您的辛苦终于转化成了果实"
+                    android:textColor="@color/common_h2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/gap_4x"
+                android:background="@drawable/bg_under_dotted_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap_2x"
+                    android:text="每一笔账，从来都不是单独计算"
+                    android:textColor="@color/common_h2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap_2x"
+                    android:text="每个农民的生活，都有改变这个世界的力量"
+                    android:textColor="@color/common_h2" />
+            </LinearLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tv_share"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:layout_marginRight="@dimen/gap_3x"
+                android:layout_marginTop="@dimen/gap_3x"
+                android:gravity="center"
+                android:text="邀请好友开启棉田账单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_larger"
+                app:rv_backgroundColor="@color/colorAccent"
+                app:rv_cornerRadius="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注：首次分享可获得免费刮奖机会，最终解释权归劳道所有"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_weak"
+                android:layout_marginTop="@dimen/gap_4x"
+                android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

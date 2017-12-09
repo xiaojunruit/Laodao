@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <com.ejz.multistateview.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:msv_viewState="loading">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/gap_3x">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="登记证号"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="PD20050137"
+                            android:textColor="@color/colorAccent" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="农药种类"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="农药种类"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="登记名称"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_register_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="二氢"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="总含量"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_total_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="36%"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="剂型"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_product_form"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="可湿性粉剂"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="毒性"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_toxic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="低毒"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="商品名称"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="商品名称"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="生产厂家"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_manufacturer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="邢台宝波农药有限公司"
+                            android:textColor="@color/colorAccent" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="国家"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="中国"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="有效起始日"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_expiry_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="2013-12-24"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/common_divider_narrow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="有效截止日"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_expiry_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="2013-12-24"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:background="@color/background"
+                    android:gravity="center"
+                    android:text="有效成分信息"
+                    android:textColor="@color/common_h1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/tab_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="有效成分"
+                        android:textColor="@color/common_h1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/tab_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="有效成分含量"
+                        android:textColor="@color/common_h1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/constitute_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:background="@color/background"
+                    android:gravity="center"
+                    android:text="有效成分用药信息"
+                    android:textColor="@color/common_h1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:background="@color/background">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="作物"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_weak" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="防治对象"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_weak" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="有效成分用药信息"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_weak" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="施用方法"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_weak" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/usage_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/common_divider_narrow" />
+
+                <TextView
+                    android:id="@+id/tv_dose_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:lineSpacingExtra="@dimen/gap"
+                    android:padding="@dimen/gap_3x"
+                    android:textColor="@color/common_h3"
+                    android:textSize="@dimen/sp_weak"
+                    tools:text="注意事项" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:background="@drawable/bg_white_line_gray"
+                    android:drawableLeft="@mipmap/ic_bule"
+                    android:drawablePadding="@dimen/gap"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:text="产品性能(用途)"
+                    android:textSize="@dimen/sp_larger" />
+
+                <TextView
+                    android:id="@+id/tv_product_usage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:lineSpacingExtra="@dimen/gap"
+                    android:padding="@dimen/gap_3x"
+                    android:textColor="@color/common_h3"
+                    tools:text="高效氯氰菊酯为拟除虫菊酯类杀虫剂，具有触杀和胃毒作用，无内吸和熏蒸作用。对光、热稳定。" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:background="@drawable/bg_white_line_gray"
+                    android:drawableLeft="@mipmap/ic_bule"
+                    android:drawablePadding="@dimen/gap"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:text="注意事项"
+                    android:textSize="@dimen/sp_larger" />
+
+                <TextView
+                    android:id="@+id/tv_attention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:lineSpacingExtra="@dimen/gap"
+                    android:padding="@dimen/gap_3x"
+                    android:textColor="@color/common_h3"
+                    tools:text="高效氯氰菊酯为拟除虫菊酯类杀虫剂，具有触杀和胃毒作用，无内吸和熏蒸作用。对光、热稳定。" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:background="@drawable/bg_white_line_gray"
+                    android:drawableLeft="@mipmap/ic_bule"
+                    android:drawablePadding="@dimen/gap"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:text="中毒"
+                    android:textSize="@dimen/sp_larger" />
+
+                <TextView
+                    android:id="@+id/tv_poisoning_aid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:lineSpacingExtra="@dimen/gap"
+                    android:padding="@dimen/gap_3x"
+                    android:text=""
+                    android:textColor="@color/common_h3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_height"
+                    android:background="@drawable/bg_white_line_gray"
+                    android:drawableLeft="@mipmap/ic_bule"
+                    android:drawablePadding="@dimen/gap"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:text="储存运输"
+                    android:textSize="@dimen/sp_larger" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:lineSpacingExtra="@dimen/gap"
+                    android:padding="@dimen/gap_3x"
+                    android:textColor="@color/common_h3"
+                    android:visibility="gone"
+                    tools:text="没有" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/background" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:background="@drawable/bg_white_line_gray"
+                        android:paddingLeft="@dimen/gap_3x">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="备注"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/common_h1"
+                            tools:text="备注" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:background="@drawable/bg_white_line_gray"
+                        android:paddingLeft="@dimen/gap_3x">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="地址"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="浙江省"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:background="@drawable/bg_white_line_gray"
+                        android:paddingLeft="@dimen/gap_3x">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="网址"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="www.baidu.com"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:background="@drawable/bg_white_line_gray"
+                        android:paddingLeft="@dimen/gap_3x">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="邮编"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_zipcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="311600"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:background="@drawable/bg_white_line_gray"
+                        android:paddingLeft="@dimen/gap_3x">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="电话"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="0769-456456454"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_height"
+                        android:background="@drawable/bg_white_line_gray"
+                        android:paddingLeft="@dimen/gap_3x">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="传真"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger" />
+
+                        <TextView
+                            android:id="@+id/tv_fax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="0769-454587799"
+                            android:textColor="@color/common_h1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.ejz.multistateview.MultiStateView>
+    </ScrollView>
+
+</LinearLayout>

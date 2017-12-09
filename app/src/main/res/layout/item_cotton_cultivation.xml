@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/gap_3x">
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_location_blue"
+        android:drawablePadding="@dimen/gap"
+        android:text="喀什地区 麦盖提县 希依提敦乡 托万喀帕克阿斯提村"
+        android:textColor="@color/common_h3"
+        android:textSize="@dimen/sp_weaker" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_plant_place"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/gap"
+                android:paddingTop="@dimen/gap"
+                android:text="棉花种植地点: 2组"
+                android:textSize="@dimen/sp_weaker" />
+
+            <TextView
+                android:id="@+id/tv_cotton_plant_area"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="陆地棉种植净面积(亩): 135"
+                android:textSize="@dimen/sp_weaker" />
+
+            <TextView
+                android:id="@+id/tv_specotton_plant_area"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/gap"
+                android:paddingTop="@dimen/gap"
+                android:text="特种棉种植净面积(亩): 0"
+                android:textSize="@dimen/sp_weaker" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_crop_plant_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/gap"
+                android:paddingTop="@dimen/gap"
+                android:text="棉花种植净面积(亩): 135"
+                android:textSize="@dimen/sp_weaker" />
+
+            <TextView
+                android:id="@+id/tv_cotton_avg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="三年平均单产(公斤/亩): 135"
+                android:textSize="@dimen/sp_weaker" />
+
+            <TextView
+                android:id="@+id/tv_specotton_avg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/gap"
+                android:paddingTop="@dimen/gap"
+                android:text="三年平均单产(公斤/亩): 135"
+                android:textSize="@dimen/sp_weaker" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_report_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上报时间:2016-01-01 19:15:14"
+        android:textColor="@color/common_h3"
+        android:textSize="@dimen/sp_weaker" />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/img_farmland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingBottom="@dimen/gap_2x"
+            android:paddingLeft="@dimen/gap_2x"
+            android:paddingRight="@dimen/gap_3x"
+            android:src="@mipmap/ic_operation_less" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="农资种类"
+            android:textColor="@color/common_h1" />
+
+        <EditText
+            android:id="@+id/edittxt_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/gap_5x"
+            android:layout_toRightOf="@+id/text2"
+            android:background="@color/white"
+            android:hint="请输入农资种类"
+            android:textColorHint="@color/common_h3"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/widget_view_line_left" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="费用总计"
+            android:textColor="@color/common_h1" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/gap_5x"
+            android:layout_toLeftOf="@+id/money2"
+            android:layout_toRightOf="@+id/text3"
+            android:background="@color/white"
+            android:hint="请输入金额"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/common_h3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/money2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="元"
+            android:textColor="@color/common_h1" />
+    </RelativeLayout>
+
+</LinearLayout>

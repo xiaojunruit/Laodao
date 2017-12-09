@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_release_supply"
+    android:layout_width="match_parent"
+    android:layout_height="81dp"
+    android:layout_weight="1"
+    android:background="@drawable/touch_bg"
+    android:paddingLeft="@dimen/gap_3x">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_encyclopedia_books" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/gap">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Tv.larger"
+            android:text="供求发布" />
+
+        <TextView
+            android:id="@+id/tv_mark"
+            style="@style/Tv.weak"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:text="供需资源快速匹配" />
+    </LinearLayout>
+</LinearLayout>

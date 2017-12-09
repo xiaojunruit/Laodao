@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/gap_2x"
+    android:paddingTop="@dimen/gap_2x">
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_icon"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--tools:src="@mipmap/ic_camera" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/gap_2x"-->
+        <!--tools:text="ceshfd" />-->
+
+    <com.laoodao.smartagri.view.IconButton
+        android:id="@+id/ib_operation"
+        style="@style/IconButton.custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:ib_iconSize="41dp"
+        app:ib_textSize="@dimen/sp_default" />
+
+</LinearLayout>

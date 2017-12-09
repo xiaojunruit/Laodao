@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0081cc</color>
+    <color name="colorPrimaryDark">#0081cc</color>
+    <color name="colorAccent">#0081cc</color>
+
+
+    <!--通用触摸背景色-->
+    <color name="common_touch_bg">#E3E3E3</color>
+    <!--通用背景色-->
+    <color name="common_gray_bg">#EEEEEE</color>
+
+    <!--通用一级标题的颜色-->
+    <color name="common_h1">#333646</color>
+    <!--通用二级标题的颜色-->
+    <color name="common_h2">#666666</color>
+    <!--通用三级标题的颜色-->
+    <color name="common_h3">#999999</color>
+
+    <color name="common_h4">#b2b2b2</color>
+    <color name="common_h5">#cccccc</color>
+    <color name="common_h6">#bababa</color>
+    <color name="text_black">#333333</color>
+
+    <!--通用分割线细-->
+    <color name="common_divider_narrow">#E1E1E1</color>
+
+    <color name="tip">#88303F9F</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#FF0000</color>
+
+    <color name="light_light_gray">#F3F4F6</color>
+    <color name="aply_gray">#F5F5F5</color>
+
+    <color name="background">#f2f4f5</color>
+
+    <color name="invite_gray">#F7F7F7</color>
+
+    <!--<color name="orange">#DE6014</color>-->
+    <!--<color name="gray">#b8b8b8</color>-->
+    <!--<color name="green">#5FB236</color>-->
+    <color name="transparent">#00000000</color>
+    <color name="default_hint">#bebebe</color>
+    <color name="light_white">#EEEEEE</color>
+    <color name="light_black">#515151</color>
+    <color name="light_pink">#fb9090</color>
+    <color name="light_coffee">#A58D5E</color>
+    <color name="light_gray">#AAAAAA</color>
+    <color name="light_red">#ff5655</color>
+    <color name="light_yellow">#FAB333</color>
+    <color name="light_blue">#0081cc</color>
+    <color name="light_green">#00a33e</color>
+    <color name="dark_red">#B93221</color>
+    <color name="aqua">#00A0E8</color>
+    <color name="wathet">#CCE6F5</color>
+    <color name="violet">#893EAF</color>
+
+
+    <!--70%白色透明-->
+    <color name="white_twenty_percent">#b2ffffff</color>
+    <!--80蓝色透明-->
+    <color name="bule_eighty_percent">#cc0081cc</color>
+
+    <color name="light_light_blue">#A8D4F7</color>
+
+    <drawable name="transparent">@android:color/transparent</drawable>
+    <drawable name="item_pressed">#11aaaaaa</drawable>
+
+    <drawable name="progress">#ffffff</drawable>
+</resources>

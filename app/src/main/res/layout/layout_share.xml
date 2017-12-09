@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <com.laoodao.smartagri.view.TextViewDrawable
+        android:id="@+id/btn_wx"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/touch_bg"
+        android:drawablePadding="@dimen/gap_2x"
+        android:drawableTop="@mipmap/ic_wx"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="微信"
+        app:isAliganCenter="true" />
+
+
+    <com.laoodao.smartagri.view.TextViewDrawable
+        android:id="@+id/btn_friend"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/touch_bg"
+        android:drawablePadding="@dimen/gap_2x"
+        android:drawableTop="@mipmap/ic_friend"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="朋友圈"
+        app:isAliganCenter="true" />
+
+
+    <com.laoodao.smartagri.view.TextViewDrawable
+        android:id="@+id/btn_qq"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/touch_bg"
+        android:drawablePadding="@dimen/gap_2x"
+        android:drawableTop="@mipmap/ic_qq"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="QQ"
+        app:isAliganCenter="true" />
+
+
+    <com.laoodao.smartagri.view.TextViewDrawable
+        android:id="@+id/btn_qzone"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/touch_bg"
+        android:drawablePadding="@dimen/gap_2x"
+        android:drawableTop="@mipmap/ic_qzone"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="QQ空间"
+        app:isAliganCenter="true" />
+
+</LinearLayout>

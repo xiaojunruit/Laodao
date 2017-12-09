@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/gap_3x">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_3x"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:lineSpacingExtra="3dp"
+        android:text="李克强颁发国务院令 林郑月娥任香港特首"
+        android:textColor="@color/common_h1"
+        android:textSize="@dimen/sp_micro_big_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国农业网"
+            android:textColor="@color/common_h3"
+            android:textSize="@dimen/sp_weaker" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_2x"
+            android:text="2017 / 02 /16 16:10"
+            android:textColor="@color/common_h3"
+            android:textSize="@dimen/sp_weaker" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_larger" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_4x">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="@color/common_divider_narrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/gap_2x"
+            android:paddingRight="@dimen/gap_2x"
+            android:text="分享到" />
+
+    </FrameLayout>
+
+    <include layout="@layout/layout_share" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="相关推荐"
+            android:textColor="@color/common_h1" />
+
+        <com.flyco.roundview.RoundTextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            app:rv_backgroundColor="@color/colorAccent"
+            app:rv_isRadiusHalfHeight="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+</LinearLayout>

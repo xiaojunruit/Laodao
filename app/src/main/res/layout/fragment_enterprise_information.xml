@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_line_gray"
+                android:orientation="horizontal"
+                android:padding="@dimen/gap_3x">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="所属地州"
+                    android:textColor="@color/common_h1" />
+
+                <TextView
+                    android:id="@+id/tv_ascriptiona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="所有"
+                    android:textColor="@color/common_h3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_line_gray"
+                android:orientation="horizontal"
+                android:padding="@dimen/gap_3x">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="所属市县"
+                    android:textColor="@color/common_h1" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="所有"
+                    android:textColor="@color/common_h3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_line_gray"
+                android:orientation="horizontal"
+                android:padding="@dimen/gap_3x">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="年度"
+                    android:textColor="@color/common_h1" />
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="2016"
+                    android:textColor="@color/common_h3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_line_gray"
+                android:orientation="horizontal"
+                android:padding="@dimen/gap_3x">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="企业代码"
+                    android:textColor="@color/common_h1" />
+
+                <EditText
+                    android:id="@+id/et_enterprisecode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入企业代码"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/common_h3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_line_gray"
+                android:orientation="horizontal"
+                android:padding="@dimen/gap_3x">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="企业名称"
+                    android:textColor="@color/common_h1" />
+
+                <EditText
+                    android:id="@+id/et_enterprisename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入企业名称"
+                    android:singleLine="true"
+                    android:textColor="@color/common_h3" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/gap_3x">
+
+                    <TextView
+                        android:id="@+id/tv_code"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="验证码"
+                        android:textColor="@color/common_h1" />
+
+                    <EditText
+                        android:id="@+id/et_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+                        android:hint="请输验证码"
+                        android:singleLine="true"
+                        android:textColor="@color/common_h3" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/update_code"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right">
+
+                    <WebView
+                        android:id="@+id/webview_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/sp_larger" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/btn_commit"
+                style="@style/Button.Round"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/gap_3x"
+                android:padding="@dimen/gap_2x"
+                android:text="提交"
+                android:textSize="@dimen/sp_larger" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:text="注：标注*号为必填项"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp_weaker" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

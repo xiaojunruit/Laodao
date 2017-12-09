@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="@dimen/gap"
+            android:drawableRight="@mipmap/ic_position_arrow"
+            android:maxLength="4"
+            android:padding="@dimen/gap_3x"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_larger" />
+
+        <TextView
+            style="@style/TextView.Title"
+            android:text="首页" />
+
+    </FrameLayout>
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:msv_viewState="loading">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                android:background="@color/colorAccent"></FrameLayout>
+
+            <com.ejz.xrecyclerview.XRecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants" />
+        </FrameLayout>
+    </com.ejz.multistateview.MultiStateView>
+</LinearLayout>

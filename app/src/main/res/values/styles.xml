@@ -1,0 +1,222 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/default_hint</item>
+        <item name="android:textSize">@dimen/sp_default</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+
+    <style name="Theme.ToolBar.Menu" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- 设置-弹窗的背景-颜色-->
+        <item name="android:colorBackground">@color/background</item>
+        <!-- 字体的颜色-->
+        <item name="android:textColor">@color/common_h1</item>
+        <!-- 字体大小-->
+        <item name="android:textSize">16sp</item>
+        <!-- 用于替换菜单的三个小白点，换成自已的图片-->
+        <!--<item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.MenuItem</item>-->
+        <!--用于控制menu弹出的位置，位于toolbar的下面，而不是上面-->
+        <!--<item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>-->
+        <!--  用于修改item默认的分割线
+         <item name="android:dropDownListViewStyle">@style/dropDownStyle</item>
+         <item name="dropDownListViewStyle">@style/dropDownStyle</item>-->
+    </style>
+
+    <style name="Splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowBackground">@mipmap/ic_splash</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="Tab">
+        <item name="android:layout_height">@dimen/tab_height</item>
+        <item name="android:textColor">@color/common_h1</item>
+        <item name="android:textSize">@dimen/sp_larger</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Tab.Text_Line" parent="Tab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Tab.IconText_Line" parent="Tab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/gap_3x</item>
+    </style>
+
+
+    <style name="Button" />
+
+    <style name="Button.Round">
+        <item name="android:gravity">center</item>
+        <item name="rv_cornerRadius">3dp</item>
+        <item name="rv_backgroundColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="IconButton" />
+
+    <style name="IconButton.menu">
+
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="ib_iconSize">@dimen/gap_6x</item>
+        <item name="ib_gap">@dimen/gap_2x</item>
+    </style>
+
+    <style name="IconButton.custom">
+        <item name="ib_iconSize">@dimen/gap_6x</item>
+        <item name="ib_gap">@dimen/gap_2x</item>
+    </style>
+
+    <style name="Button.Round.TAB">
+        <item name="android:gravity">center</item>
+        <item name="rv_cornerRadius">2dp</item>
+        <item name="rv_strokeWidth">1px</item>
+        <item name="android:paddingRight">@dimen/gap_4x</item>
+        <item name="android:paddingLeft">@dimen/gap_4x</item>
+        <item name="android:paddingTop">@dimen/gap</item>
+        <item name="android:paddingBottom">@dimen/gap</item>
+        <item name="android:textColor">@color/common_h4</item>
+        <item name="android:layout_marginLeft">@dimen/gap</item>
+        <item name="rv_strokeColor">@color/common_h4</item>
+        <item name="rv_backgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Button.Round.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/gap_2x</item>
+        <item name="rv_cornerRadius">2dp</item>
+        <item name="rv_strokeWidth">1dp</item>
+        <item name="android:paddingRight">@dimen/gap_2x</item>
+        <item name="android:paddingLeft">@dimen/gap_2x</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">@dimen/sp_default</item>
+        <item name="rv_strokeColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/common_h1</item>
+        <item name="rv_backgroundColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Padding">
+        <item name="android:paddingLeft">@dimen/gap_3x</item>
+        <item name="android:paddingRight">@dimen/gap_3x</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="Padding.Item">
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    <style name="TextView" />
+
+    <style name="TextView.Title">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_title</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.Setting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_h1</item>
+        <item name="android:textSize">@dimen/sp_larger</item>
+        <item name="android:padding">@dimen/gap_3x</item>
+        <item name="android:background">@drawable/touch_bg</item>
+        <item name="android:drawablePadding">@dimen/gap_3x</item>
+    </style>
+
+
+    <style name="UI" />
+
+    <style name="UI.Group">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:paddingRight">@dimen/gap_3x</item>
+        <item name="android:background">@drawable/bg_white_line_gray</item>
+    </style>
+
+    <style name="UI.Tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/gap_4x</item>
+        <item name="android:textColor">@color/common_h1</item>
+        <item name="android:textSize">@dimen/sp_default</item>
+    </style>
+
+    <style name="UI.Et">
+        <item name="android:textColorHint">@color/default_hint</item>
+        <item name="android:layout_marginRight">@dimen/gap_3x</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/common_h3</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Discovery" />
+    <!--<style name="Discovery."/>-->
+    <style name="Discovery.Group">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/touch_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/gap_4x</item>
+    </style>
+
+
+    <style name="Tv" />
+
+    <style name="Tv.larger">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_h1</item>
+        <item name="android:textSize">@dimen/sp_larger</item>
+    </style>
+
+    <style name="Tv.weak">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_h3</item>
+        <item name="android:textSize">@dimen/sp_weak</item>
+    </style>
+
+    <style name="Tv.LoanRecord">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/common_h3</item>
+        <item name="android:textSize">@dimen/sp_weak</item>
+    </style>
+
+    <style name="date">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_h1</item>
+        <item name="android:textSize">@dimen/sp_title</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

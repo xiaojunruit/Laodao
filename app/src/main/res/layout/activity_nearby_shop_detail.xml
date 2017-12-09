@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="loading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/gap_3x"
+            android:paddingRight="@dimen/gap_3x"
+            android:paddingTop="@dimen/gap_3x">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/gap_3x">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_img"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@mipmap/bg_seize_seat"
+                    app:riv_corner_radius="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/gap_2x">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:drawablePadding="@dimen/gap"
+                            android:drawableRight="@mipmap/ic_shop_authentication"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_larger"
+                            tools:text="大河农资经销商" />
+
+                        <com.flyco.roundview.RoundTextView
+                            android:id="@+id/rtv_follow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:drawablePadding="@dimen/gap"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/gap"
+                            android:paddingLeft="@dimen/gap_3x"
+                            android:paddingRight="@dimen/gap_3x"
+                            android:paddingTop="@dimen/gap"
+                            android:text="关注"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_weak"
+                            android:visibility="gone"
+                            app:rv_backgroundColor="@color/colorAccent"
+                            app:rv_cornerRadius="@dimen/gap" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/gap_4x"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/common_h3"
+                            android:textSize="@dimen/sp_weaker"
+                            tools:text="广东省东广东省东莞市广东省东莞市莞市" />
+
+                        <TextView
+                            android:id="@+id/tv_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/common_h3"
+                            android:textSize="@dimen/sp_weaker"
+                            tools:text="距您大约34公里" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/widget_view_line" />
+
+            <TextView
+                android:id="@+id/tv_address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_map_blue"
+                android:paddingBottom="@dimen/gap_3x"
+                android:paddingTop="@dimen/gap_3x"
+                android:text="地址："
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_larger" />
+
+            <include layout="@layout/widget_view_line" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_call_blue"
+                android:paddingBottom="@dimen/gap_3x"
+                android:paddingTop="@dimen/gap_3x"
+                android:text="联系方式："
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_larger" />
+
+            <include layout="@layout/widget_view_line" />
+
+            <TextView
+                android:id="@+id/tv_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/gap_3x"
+                android:paddingTop="@dimen/gap_3x"
+                android:text="经营商品："
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_larger" />
+        </LinearLayout>
+    </com.ejz.multistateview.MultiStateView>
+</LinearLayout>

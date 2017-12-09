@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="loading">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="@dimen/gap_3x">
+
+                            <TextView
+                                android:id="@+id/tv_buy_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/common_h1"
+                                android:textSize="@dimen/sp_default"
+                                tools:text="求购冰糖心" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/gap_2x">
+
+                                <TextView
+                                    android:id="@+id/tv_time"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:textColor="@color/common_h3"
+                                    android:textSize="@dimen/sp_small"
+                                    tools:text="发布时间：2017-3-10" />
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/common_h3"
+                                    android:textSize="@dimen/sp_small"
+                                    tools:text="已有100人浏览" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/gap_2x"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/gap_3x">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:background="@drawable/bg_white_line_gray"
+                                android:orientation="horizontal"
+                                android:paddingRight="@dimen/gap_3x">
+
+                                <TextView
+                                    style="@style/UI.Tv"
+                                    android:text="所在区域"
+                                    android:textColor="@color/common_h3"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_address"
+                                    style="@style/UI.Tv"
+                                    tools:text="昌吉州/昌吉市/宁边路" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:background="@drawable/bg_white_line_gray"
+                                android:paddingRight="@dimen/gap_3x">
+
+                                <TextView
+                                    style="@style/UI.Tv"
+                                    android:text="产品类型"
+                                    android:textColor="@color/common_h3"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/id_category"
+                                    style="@style/UI.Tv"
+                                    tools:text="农副产品" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:background="@drawable/bg_white_line_gray"
+                                android:paddingRight="@dimen/gap_3x"
+                                android:visibility="visible">
+
+                                <TextView
+                                    style="@style/UI.Tv"
+                                    android:text="价&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;格"
+                                    android:textColor="@color/common_h3"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_price"
+                                    style="@style/UI.Tv"
+                                    tools:text="￥0" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_acreage"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:background="@drawable/bg_white_line_gray"
+                                android:paddingRight="@dimen/gap_3x"
+                                android:visibility="gone">
+
+                                <TextView
+                                    style="@style/UI.Tv"
+                                    android:text="面&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;积"
+                                    android:textColor="@color/common_h3"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/acreage"
+                                    style="@style/UI.Tv"
+                                    tools:text="136亩" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:background="@drawable/bg_white_line_gray"
+                                android:paddingRight="@dimen/gap_3x">
+
+                                <TextView
+                                    style="@style/UI.Tv"
+                                    android:text="数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量"
+                                    android:textColor="@color/common_h3"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_amount"
+                                    style="@style/UI.Tv"
+                                    tools:text="10吨" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:background="@drawable/bg_white_line_gray"
+                                android:paddingRight="@dimen/gap_3x">
+
+                                <TextView
+                                    style="@style/UI.Tv"
+                                    android:text="姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名"
+                                    android:textColor="@color/common_h3"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_contactor"
+                                    style="@style/UI.Tv"
+                                    tools:text="小何" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:background="@drawable/bg_white_line_gray"
+                                android:paddingRight="@dimen/gap_3x">
+
+                                <TextView
+                                    style="@style/UI.Tv"
+                                    android:text="手机号码"
+                                    android:textColor="@color/common_h3"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_contacmobile"
+                                    style="@style/UI.Tv"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    tools:text="13100000000" />
+
+                                <ImageView
+                                    android:id="@+id/iv_telephone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/ic_telephone" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/gap_3x"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/gap_6x"
+                            android:paddingLeft="@dimen/gap_3x"
+                            android:paddingRight="@dimen/gap_3x">
+
+                            <TextView
+                                android:id="@+id/tv_detailed_information"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/tab_height"
+                                android:background="@drawable/bg_white_line_gray"
+                                android:drawableLeft="@mipmap/ic_bule"
+                                android:drawablePadding="@dimen/gap"
+                                android:gravity="center_vertical"
+                                android:text="详情信息"
+                                android:textColor="@color/common_h3"
+                                android:textSize="@dimen/sp_default" />
+
+
+                            <TextView
+                                android:id="@+id/tv_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_detailed_information"
+                                android:ellipsize="end"
+                                android:lineSpacingExtra="@dimen/gap_2x"
+                                android:maxLines="20"
+                                android:paddingBottom="@dimen/gap_4x"
+                                android:paddingTop="@dimen/gap_3x"
+                                android:textColor="@color/common_h1"
+                                android:textSize="@dimen/sp_default"
+                                tools:text="天然树脂胶。是指木科植物分泌物，包括生漆、树脂和树胶，如松脂桃胶、樱胶、阿拉伯胶、古巴胶和天然橡胶（包括乳胶和干胶）等。" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:paddingLeft="@dimen/gap_4x"
+                                android:paddingRight="@dimen/gap_4x">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1px"
+                                    android:layout_centerVertical="true"
+                                    android:background="@color/common_divider_narrow" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white"
+                                    android:paddingLeft="@dimen/gap"
+                                    android:paddingRight="@dimen/gap"
+                                    android:text="分享到"
+                                    android:textColor="@color/common_h3" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/gap_4x"
+                                android:paddingLeft="@dimen/gap_4x"
+                                android:paddingRight="@dimen/gap_4x"
+                                android:paddingTop="@dimen/gap_4x">
+
+                                <FrameLayout
+                                    android:id="@+id/wx"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.laoodao.smartagri.view.IconButton
+                                        style="@style/IconButton.custom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:ib_iconSize="41dp"
+                                        app:ib_icon_src="@mipmap/ic_wx"
+                                        app:ib_textColor="@color/common_h3"
+                                        app:ib_textSize="@dimen/sp_default"
+                                        app:ib_title="微信" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/friend"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.laoodao.smartagri.view.IconButton
+                                        android:id="@+id/btn_friend"
+                                        style="@style/IconButton.custom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:ib_iconSize="41dp"
+                                        app:ib_icon_src="@mipmap/ic_friend"
+                                        app:ib_textColor="@color/common_h3"
+                                        app:ib_textSize="@dimen/sp_default"
+                                        app:ib_title="朋友圈" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/qq"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.laoodao.smartagri.view.IconButton
+                                        android:id="@+id/btn_qq"
+                                        style="@style/IconButton.custom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:ib_iconSize="41dp"
+                                        app:ib_icon_src="@mipmap/ic_qq"
+                                        app:ib_textColor="@color/common_h3"
+                                        app:ib_textSize="@dimen/sp_default"
+                                        app:ib_title="QQ" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/qzone"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <com.laoodao.smartagri.view.IconButton
+                                        android:id="@+id/btn_qzone"
+                                        style="@style/IconButton.custom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:ib_iconSize="41dp"
+                                        app:ib_icon_src="@mipmap/ic_qzone"
+                                        app:ib_textColor="@color/common_h3"
+                                        app:ib_textSize="@dimen/sp_default"
+                                        app:ib_title="QQ空间" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_chat"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:text="我要询价"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_call_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="打电话"
+                        android:textColor="@color/common_h1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="100dp"
+                android:padding="@dimen/gap_3x"
+                android:src="@drawable/selector_market_collected" />
+
+        </FrameLayout>
+    </com.ejz.multistateview.MultiStateView>
+
+
+</LinearLayout>
+
+

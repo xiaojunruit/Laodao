@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <ImageView
+        android:id="@+id/iv_tu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/bg_cottonfield_index"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/mark"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/cotton_bill_guide_1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_big_title"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/gap"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/cotton_bill_guide_2"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</FrameLayout>

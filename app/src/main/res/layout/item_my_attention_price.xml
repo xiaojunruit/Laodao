@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/gap_2x"
+    android:paddingLeft="@dimen/gap_3x"
+    android:paddingRight="@dimen/gap_3x"
+    android:paddingTop="@dimen/gap_2x">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/riv_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_test" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/gap_2x"
+        android:layout_marginRight="@dimen/gap_4x"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/gap"
+        android:paddingTop="@dimen/gap">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_larger"
+            tools:text="棉花" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/common_h2"
+            android:visibility="gone"
+            tools:text="棉花衣分36.8%" />
+
+
+    </FrameLayout>
+
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:id="@+id/rfl_follow"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/gap"
+        android:paddingTop="@dimen/gap"
+        app:rv_backgroundColor="@color/colorAccent"
+        app:rv_cornerRadius="@dimen/gap">
+
+        <TextView
+            android:id="@+id/tv_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/gap"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:text="关注" />
+
+    </com.flyco.roundview.RoundFrameLayout>
+</LinearLayout>

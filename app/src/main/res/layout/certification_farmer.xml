@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item_farmer_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:background="@drawable/bg_dotted_line" />-->
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/rtv_add_farmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:drawableLeft="@mipmap/ic_add_blue"
+        android:drawablePadding="@dimen/gap"
+        android:padding="@dimen/gap_2x"
+        android:text="点击添加种植作物"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/sp_default"
+        app:rv_cornerRadius="2dp"
+        app:rv_strokeColor="@color/colorAccent"
+        app:rv_strokeWidth="1dp" />
+</LinearLayout>

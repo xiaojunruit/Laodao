@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="190dp"
+    android:background="@mipmap/bg_popup_arrow_botton"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="全部动态"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_release_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="发布问题"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="评论/回复"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_want_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="求购"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_supply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:text="供销"
+        android:textColor="@color/white" />
+</LinearLayout>

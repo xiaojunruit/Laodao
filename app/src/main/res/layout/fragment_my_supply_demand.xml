@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_my_release"
+            style="@style/TextView.Setting"
+            android:drawableLeft="@mipmap/ic_my_release"
+            android:text="我的发布" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:background="@color/common_divider_narrow" />
+
+        <TextView
+            android:id="@+id/tv_my_collection"
+            style="@style/TextView.Setting"
+            android:drawableLeft="@mipmap/ic_my_collection"
+            android:text="我的收藏" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:background="@color/common_divider_narrow" />
+
+        <TextView
+            android:id="@+id/tv_browse_record"
+            style="@style/TextView.Setting"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/ic_my_browse"
+            android:text="浏览记录" />
+
+    </LinearLayout>
+</LinearLayout>

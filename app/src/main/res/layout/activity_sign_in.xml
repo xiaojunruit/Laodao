@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_sign_in"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.SignInActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/gap_3x"
+            android:paddingRight="@dimen/gap_3x">
+
+
+            <LinearLayout
+                android:id="@+id/integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- - - -"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_4x">
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tv_welfare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="福利"
+                    android:textColor="@color/white"
+                    app:rv_backgroundColor="#FAB029"
+                    app:rv_cornerRadius="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/gap_2x"
+                    android:layout_toRightOf="@+id/tv_welfare"
+                    android:text="签到赢积分"
+                    android:textColor="@color/common_h3"
+                    android:textSize="@dimen/sp_middle" />
+
+
+                <TextView
+                    android:id="@+id/tv_sign_in_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="已连续签到0天"
+                    android:textColor="@color/common_h3"
+                    android:textSize="@dimen/sp_weaker" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/bg_calender" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/gap_4x"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_previous"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="2017年4月"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_title"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tv_next"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/date"
+                            android:text="日" />
+
+                        <TextView
+                            style="@style/date"
+                            android:text="一" />
+
+                        <TextView
+                            style="@style/date"
+                            android:text="二" />
+
+                        <TextView
+                            style="@style/date"
+                            android:text="三" />
+
+                        <TextView
+                            style="@style/date"
+                            android:text="四" />
+
+                        <TextView
+                            style="@style/date"
+                            android:text="五" />
+
+                        <TextView
+                            style="@style/date"
+                            android:text="六" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        app:layoutManager="GridLayoutManager"
+                        app:spanCount="7"
+                        tools:listitem="@layout/item_calender" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/gap_3x"
+                android:background="@mipmap/ic_btn_sign">
+
+                <TextView
+                    android:id="@+id/tv_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="签到"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_larger" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_integral_record"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="积分记录"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/tv_use_record"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="使用记录"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/gap_3x">
+
+
+    <ImageView
+        android:id="@+id/img_left"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@mipmap/ic_task" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布问题"
+            android:textColor="@color/common_h1" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="每天发布一个问题增加5积分，每天最多获得50积分（10个问题）"
+            android:textSize="@dimen/sp_weak" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_4x"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+10"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_go"
+            style="@style/Button.Round"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="@dimen/gap"
+            android:text="去完成"
+            app:rv_isRadiusHalfHeight="true" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

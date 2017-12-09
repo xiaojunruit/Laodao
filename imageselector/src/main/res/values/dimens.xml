@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_radius">2dp</dimen>
+    <dimen name="margin_text">11dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="btn_height">32dp</dimen>
+</resources>

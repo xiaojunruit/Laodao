@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/gap_3x">
+
+            <TextView
+                style="@style/UI.Tv"
+                android:text="求购类型" />
+
+            <EditText
+                style="@style/UI.Et"
+                android:hint="请输入求购类型" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/gap_3x"
+                android:src="@mipmap/ic_right_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/gap_3x">
+
+            <LinearLayout style="@style/UI.Group">
+
+                <TextView
+                    style="@style/UI.Tv"
+                    android:text="求购名称" />
+
+                <EditText
+                    style="@style/UI.Et"
+                    android:hint="请输入您需要采购的商品" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/UI.Group">
+
+                <TextView
+                    style="@style/UI.Tv"
+                    android:text="数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量" />
+
+                <EditText
+                    style="@style/UI.Et"
+                    android:hint="请输入您需要采购的数量" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/UI.Group">
+
+                <TextView
+                    style="@style/UI.Tv"
+                    android:text="姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名" />
+
+                <EditText
+                    style="@style/UI.Et"
+                    android:hint="请输入您的姓名" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/UI.Group">
+
+
+                <TextView
+                    style="@style/UI.Tv"
+                    android:text="联系电话" />
+
+                <EditText
+                    style="@style/UI.Et"
+                    android:hint="请输入您的联系电话" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/UI.Group">
+
+                <TextView
+                    style="@style/UI.Tv"
+                    android:text="所在地区" />
+
+                <EditText
+                    style="@style/UI.Et"
+                    android:hint="请输入选择您所在的地区" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/gap_3x"
+                    android:src="@mipmap/ic_right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:background="@color/white">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="补充求购说明..."
+                android:padding="@dimen/gap_3x"
+                android:textAllCaps="true"
+                android:textColor="@color/common_h1"
+                android:textColorHint="@color/default_hint"
+                android:textSize="@dimen/sp_weaker" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/btn_commit"
+        style="@style/Button.Round"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/gap_2x"
+        android:padding="@dimen/gap_2x"
+        android:text="提交发布"
+        android:textSize="@dimen/sp_larger" />
+</LinearLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/gap_6x">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/gap_5x">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_default_avatar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/gap"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_larger"
+                    tools:text="Moon月神rz" />
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/gap"
+                    android:src="@mipmap/ic_sex_man" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/gap"
+                android:textColor="@color/white"
+                tools:text="广东 东莞" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/gap">
+
+                <TextView
+                    android:id="@+id/tv_mutual_concern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    tools:text="关注  25  |" />
+
+                <TextView
+                    android:id="@+id/tv_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    tools:text="  粉丝  21" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_autograph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:layout_marginRight="@dimen/gap_3x"
+                android:layout_marginTop="@dimen/gap"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                tools:text="若生活需要微笑请看看我就好" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0px" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_edit_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="110dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="@dimen/gap_5x"
+            android:paddingTop="3dp"
+            android:text="编辑资料"
+            android:textColor="@color/common_h1"
+            app:rv_backgroundColor="#D8E9F9"
+            app:rv_cornerRadius="20dp" />
+
+        <TextView
+            android:id="@+id/tv_authentication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ic_user_label"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/gap_3x"
+            android:paddingRight="@dimen/gap_2x"
+            android:paddingTop="1.5dp"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone"
+            tools:text="农资店主" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_shop_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shop_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="10"
+                    android:textColor="@color/common_h1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap"
+                    android:text="关注的农资店"
+                    android:textColor="@color/common_h3" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/gap_2x"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:background="@color/common_divider_narrow" />
+
+        <FrameLayout
+            android:id="@+id/fl_price_quotation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_price_quotation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="10"
+                    android:textColor="@color/common_h1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap"
+                    android:text="关注的价格行情"
+                    android:textColor="@color/common_h3" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/gap_2x"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:background="@color/common_divider_narrow" />
+
+        <FrameLayout
+            android:id="@+id/fl_collection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="10"
+                    android:textColor="@color/common_h1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap"
+                    android:text="收藏"
+                    android:textColor="@color/common_h3" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:id="@+id/ll_empty_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您还没有发表任何内容"
+                android:textColor="@color/common_h3" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/rtv_no_data"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/gap_2x"
+                android:gravity="center"
+                android:text="去提问"
+                android:textColor="@color/white"
+                app:rv_backgroundColor="#6BB6F2"
+                app:rv_cornerRadius="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_empty_ta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_empty1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ta还没有发表任何内容"
+                android:textColor="@color/common_h2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_empty1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="暂无动态"
+                android:textColor="@color/common_h2" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

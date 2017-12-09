@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/fl_fail_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingLeft="@dimen/gap_6x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_2x"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_error_prompt" />
+
+        <TextView
+            android:id="@+id/tv_fail_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="      非常抱歉，您所提交的信息与你所认证的身份不符,请修改后重新提交，谢谢!"
+            android:textColor="@color/light_red"
+            android:textSize="@dimen/sp_default" />
+    </FrameLayout>
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="loading">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/view_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gap_2x"
+                        android:background="@color/background"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="46dp"
+                            android:layout_marginRight="46dp"
+                            android:layout_marginTop="@dimen/gap_4x"
+                            android:background="@drawable/bg_dotted_line"
+                            android:hapticFeedbackEnabled="false"
+                            android:layerType="software">
+
+                            <com.flyco.roundview.RoundTextView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/white"
+                                app:rv_backgroundColor="@color/colorAccent"
+                                app:rv_isRadiusHalfHeight="true" />
+
+                            <com.flyco.roundview.RoundTextView
+                                android:id="@+id/rvt_second"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/white"
+                                app:rv_backgroundColor="@color/common_h4"
+                                app:rv_isRadiusHalfHeight="true" />
+
+                            <com.flyco.roundview.RoundTextView
+                                android:id="@+id/rtv_three"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_gravity="right"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/white"
+                                app:rv_backgroundColor="@color/common_h4"
+                                app:rv_isRadiusHalfHeight="true" />
+                        </FrameLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/gap"
+                            android:src="@mipmap/ic_audited"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="@dimen/gap">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="填写认证"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp_default" />
+
+                        <TextView
+                            android:id="@+id/tv_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="等待审核"
+                            android:textColor="@color/common_h6"
+                            android:textSize="@dimen/sp_default" />
+
+                        <TextView
+                            android:id="@+id/tv_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="认证成功"
+                            android:textColor="@color/common_h6"
+                            android:textSize="@dimen/sp_default" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/gap_3x"
+                        android:background="@color/light_light_gray"
+                        android:paddingBottom="@dimen/gap_3x"
+                        android:paddingLeft="@dimen/gap_6x"
+                        android:paddingTop="@dimen/gap_3x">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/ic_essential_information"
+                            android:drawablePadding="8dp"
+                            android:gravity="center"
+                            android:text="基本信息"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_default" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="(注：带*号选项必填或至少选择一项)"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp_weaker" />
+                    </LinearLayout>
+
+                    <com.flyco.roundview.RoundLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/gap_3x"
+                        android:layout_marginRight="@dimen/gap_3x"
+                        android:layout_marginTop="@dimen/gap_2x"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:paddingLeft="@dimen/gap_2x"
+                        app:rv_backgroundColor="@color/aply_gray"
+                        app:rv_strokeColor="@color/default_hint"
+                        app:rv_strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/tv_true_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_default"
+                            tools:text="*真实姓名:" />
+
+                        <EditText
+                            android:id="@+id/et_true_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/gap_2x"
+                            android:background="@null"
+                            android:inputType="text" />
+                    </com.flyco.roundview.RoundLinearLayout>
+
+                    <com.flyco.roundview.RoundLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gap_3x"
+                        android:layout_marginRight="@dimen/gap_3x"
+                        android:layout_marginTop="@dimen/gap_2x"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/gap_3x"
+                        android:paddingLeft="@dimen/gap_2x"
+                        android:paddingRight="@dimen/gap_2x"
+                        android:paddingTop="@dimen/gap_3x"
+                        app:rv_backgroundColor="@color/aply_gray"
+                        app:rv_strokeColor="@color/default_hint"
+                        app:rv_strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/tv_identity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/common_h1"
+                            android:textSize="@dimen/sp_default"
+                            tools:text="*请选择认证身份:" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rb_farmer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/common_h1"
+                                    android:checked="true"
+                                    android:text="农户"
+                                    android:textColor="@color/common_h1"
+                                    android:textSize="@dimen/sp_default" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_shop"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/gap_3x"
+                                    android:buttonTint="@color/common_h1"
+                                    android:text="商家"
+                                    android:textColor="@color/common_h1"
+                                    android:textSize="@dimen/sp_default" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_expert"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/gap_3x"
+                                    android:buttonTint="@color/common_h1"
+                                    android:text="专家"
+                                    android:textColor="@color/common_h1"
+                                    android:textSize="@dimen/sp_default" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="@dimen/gap"
+                            android:background="@drawable/bg_dotted_line"
+                            android:hapticFeedbackEnabled="false"
+                            android:layerType="software" />
+
+                        <FrameLayout
+                            android:id="@+id/fl_farmer_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <include layout="@layout/certification_farmer" />
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:id="@+id/fl_shop_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <include layout="@layout/certification_shop" />
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:id="@+id/fl_expert_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <include layout="@layout/certification_expert" />
+                        </FrameLayout>
+
+
+                    </com.flyco.roundview.RoundLinearLayout>
+
+                    <com.flyco.roundview.RoundLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gap_3x"
+                        android:layout_marginRight="@dimen/gap_3x"
+                        android:layout_marginTop="@dimen/gap_2x"
+                        android:orientation="vertical"
+                        android:padding="@dimen/gap_3x"
+                        android:visibility="gone"
+                        app:rv_backgroundColor="@color/aply_gray"
+                        app:rv_strokeColor="@color/default_hint"
+                        app:rv_strokeWidth="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="个人简介"
+                            android:textColor="@color/common_h1" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/gap"
+                            android:background="@null"
+                            android:hint="请简要描述下,让其他人更好的了解您..." />
+                    </com.flyco.roundview.RoundLinearLayout>
+
+                    <com.flyco.roundview.RoundTextView
+                        android:id="@+id/btn_commit"
+                        style="@style/Button.Round"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/gap_4x"
+                        android:layout_marginLeft="@dimen/gap_3x"
+                        android:layout_marginRight="@dimen/gap_3x"
+                        android:layout_marginTop="@dimen/gap_4x"
+                        android:padding="@dimen/gap_2x"
+                        android:text="提交认证"
+                        android:textSize="@dimen/sp_larger" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btv_isInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </ScrollView>
+    </com.ejz.multistateview.MultiStateView>
+</LinearLayout>

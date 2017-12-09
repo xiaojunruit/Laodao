@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:textColor="@color/common_h2"
+        android:textSize="@dimen/sp_weaker"
+        tools:text="2015-02-02" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:id="@+id/tv_answer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/common_h1"
+            tools:text="普通肥料利用率氮肥30%、磷肥15%" />
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:orientation="horizontal"
+            app:rv_backgroundColor="#F4F4F4"
+            app:rv_cornerRadius="3dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_content"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="3dp"
+                tools:src="@mipmap/ic_test" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/gap_2x"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_larger"
+                    android:visibility="gone"
+                    tools:text="小黄瓜用什么肥料好？" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="小黄瓜用什么肥料好？" />
+            </LinearLayout>
+
+        </com.flyco.roundview.RoundLinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

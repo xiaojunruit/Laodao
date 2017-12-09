@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.IdeaFeedbackActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/gap_3x"
+                        android:text="反馈问题类型"
+                        android:textColor="@color/common_h1" />
+
+                    <!--<com.laoodao.smartagri.view.TagGroup-->
+                    <!--android:id="@+id/tg_idea"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingLeft="@dimen/gap_3x"-->
+                    <!--android:paddingRight="@dimen/gap_3x"-->
+                    <!--app:tgp_horizontal_spacing="@dimen/gap_2x"-->
+                    <!--app:tgp_vertical_spacing="@dimen/gap" />-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/gap_2x" />
+
+
+                    <com.flyco.roundview.RoundLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="@dimen/gap_3x"
+                        android:layout_marginRight="@dimen/gap_3x"
+                        android:orientation="vertical"
+                        app:rv_cornerRadius="0dp"
+                        app:rv_strokeColor="@color/common_divider_narrow"
+                        app:rv_strokeWidth="1px">
+
+
+                        <EditText
+                            android:id="@+id/et_suggestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="left|top"
+                            android:hint="选择问题类型，帮助我们更快处理您的反馈"
+                            android:maxLength="500"
+                            android:padding="@dimen/gap_2x"
+                            android:textSize="@dimen/sp_default" />
+
+                        <TextView
+                            android:id="@+id/tv_input_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginBottom="@dimen/gap"
+                            android:layout_marginRight="@dimen/gap"
+                            android:text="@string/_0_500"
+                            android:textSize="@dimen/sp_weaker" />
+
+                    </com.flyco.roundview.RoundLinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/gap_2x"
+                        android:layout_marginLeft="@dimen/gap_3x"
+                        android:layout_marginRight="@dimen/gap_3x"
+                        android:layout_marginTop="@dimen/gap_2x"
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/image_recyclerView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:choiceMode="singleChoice"
+                            android:divider="@null"
+                            android:fadingEdge="none"
+                            android:listSelector="@android:color/transparent"
+                            android:scrollbarStyle="outsideOverlay" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_add_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/ic_camera" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_top"
+                    android:layout_marginTop="@dimen/gap_2x"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/gap_3x">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机号码"
+                        android:textColor="@color/common_h1" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gap_4x"
+                        android:background="@null"
+                        android:hint="请输入手机号码"
+                        android:inputType="number"
+                        android:textColorHint="@color/default_hint"
+                        android:textSize="@dimen/sp_default" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/btn_commit"
+                style="@style/Button.Round"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/gap_2x"
+                android:padding="@dimen/gap_2x"
+                android:text="提交"
+                android:textSize="@dimen/sp_larger" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

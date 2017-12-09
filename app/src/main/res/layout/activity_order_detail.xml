@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="loading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.ejz.xrecyclerview.XRecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <FrameLayout
+                android:id="@+id/fl_payment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/gap_3x"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_pending_payment_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="待支付金额：8000.00元"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_larger" />
+
+                <TextView
+                    android:id="@+id/tv_payment"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="去付款"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_larger" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </com.ejz.multistateview.MultiStateView>
+</LinearLayout>

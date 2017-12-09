@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.LoginActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/Padding"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:background="@drawable/bg_white_line_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_phone" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入帐号或手机号码"
+                android:paddingLeft="@dimen/gap_2x"
+                android:singleLine="true"
+                android:textColor="@color/common_h1"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Padding"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:background="@drawable/bg_white_line_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_password" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/gap_2x"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_weak" />
+
+            <ImageView
+                android:id="@+id/btn_show_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="@dimen/gap_3x"
+                android:paddingRight="@dimen/gap_3x"
+                android:src="@drawable/selector_eyes" />
+        </LinearLayout>
+
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/btn_login"
+            style="@style/Button.Round"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:layout_marginRight="@dimen/gap_3x"
+            android:layout_marginTop="@dimen/gap_3x"
+            android:padding="@dimen/gap_2x"
+            android:text="登录"
+            android:textSize="@dimen/sp_larger" />
+
+        <TextView
+            android:id="@+id/btn_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/gap_2x"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/gap"
+            android:text="忘记密码?"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_weak" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/btn_register"
+            style="@style/Button.Round"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:layout_marginRight="@dimen/gap_3x"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:padding="@dimen/gap_2x"
+            android:text="通过手机注册"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_larger"
+            app:rv_backgroundColor="@color/white"
+            app:rv_strokeColor="@color/colorAccent"
+            app:rv_strokeWidth="1px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/gap_4x">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="@dimen/gap_2x">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/common_divider_narrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/background"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="或用以下方式登录"
+                android:textColor="@color/common_h3"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.laoodao.smartagri.view.IconButton
+                android:id="@+id/ib_weixin"
+                style="@style/IconButton.custom"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:ib_icon_src="@mipmap/ic_wx"
+                app:ib_textSize="@dimen/sp_default"
+                app:ib_title="微信登录" />
+
+            <com.laoodao.smartagri.view.IconButton
+                android:id="@+id/ib_qq"
+                style="@style/IconButton.custom"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:ib_icon_src="@mipmap/ic_qq"
+                app:ib_textSize="@dimen/sp_default"
+                app:ib_title="QQ登录" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

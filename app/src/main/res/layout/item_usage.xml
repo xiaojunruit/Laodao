@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_crop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="十字花科蔬菜"
+        android:textColor="@color/common_h1" />
+
+    <TextView
+        android:id="@+id/tv_object"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="菜青虫"
+        android:textColor="@color/common_h1" />
+
+
+    <TextView
+        android:id="@+id/tv_dosage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="9-25.5克/公顷"
+        android:textColor="@color/common_h1" />
+
+
+    <TextView
+        android:id="@+id/tv_usage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/gap_3x"
+        android:text="喷雾"
+        android:textColor="@color/common_h1" />
+</LinearLayout>

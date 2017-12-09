@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/gap_3x">
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_my_order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/gap_5x"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap"
+        android:paddingTop="@dimen/gap"
+        android:text="我的订单"
+        android:textColor="@color/white"
+        app:rv_backgroundColor="@color/common_h5"
+        app:rv_cornerRadius="3dp" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_repayment_record"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/gap_5x"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap"
+        android:paddingTop="@dimen/gap"
+        android:text="还款记录"
+        android:textColor="@color/white"
+        app:rv_backgroundColor="@color/common_h5"
+        app:rv_cornerRadius="3dp" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_return"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/gap"
+        android:paddingTop="@dimen/gap"
+        android:text="退货/退款"
+        android:textColor="@color/white"
+        app:rv_backgroundColor="@color/common_h5"
+        app:rv_cornerRadius="3dp" />
+</LinearLayout>

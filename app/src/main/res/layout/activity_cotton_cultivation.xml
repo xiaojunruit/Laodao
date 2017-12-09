@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cotton_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gap_2x"
+                android:background="@color/background" />
+
+            <FrameLayout
+                android:id="@+id/fl_first_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/gap_3x"
+                android:paddingRight="@dimen/gap_3x">
+
+                <TextView
+                    android:id="@+id/tv_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="交售信息列表"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_larger" />
+
+                <ImageView
+                    android:id="@+id/iv_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/gap_3x"
+                    android:src="@drawable/selector_gray_arrow" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lineSpacingExtra="@dimen/gap"
+                    android:paddingBottom="@dimen/gap_3x"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x"
+                    android:text="注:更新时间指该条籽棉数据最后一次上传时间如果籽棉交售信息有异常，请联系轧花企业"
+                    android:textColor="@color/light_red"
+                    android:textSize="@dimen/sp_weaker" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <TextView
+                    android:id="@+id/tv_list_sell"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingBottom="@dimen/gap_3x"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x"
+                    android:paddingTop="@dimen/gap"
+                    android:text="交售信息"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_weaker" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gap_2x"
+                android:background="@color/background" />
+
+            <FrameLayout
+                android:id="@+id/fl_two_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/gap_3x"
+                android:paddingRight="@dimen/gap_3x">
+
+                <TextView
+                    android:id="@+id/tv_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="截止到2017.10.31交售信息列表"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_larger" />
+
+                <ImageView
+                    android:id="@+id/iv_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/gap_3x"
+                    android:src="@drawable/selector_gray_arrow" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_End31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_End31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <TextView
+                    android:id="@+id/tv_End31_sell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingBottom="@dimen/gap"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x"
+                    android:paddingTop="@dimen/gap"
+                    android:text="截止到2016.10.31"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_weaker" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/gap_3x"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x"
+                    android:text="注：暂未公示指截止2016年10月31日，该企业暂未获得自治区棉花目标价格改革加工企业的公示。"
+                    android:textColor="@color/light_red"
+                    android:textSize="@dimen/sp_weaker" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gap_2x"
+                android:background="@color/background" />
+
+            <FrameLayout
+                android:id="@+id/fl_three_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/gap_3x"
+                android:paddingRight="@dimen/gap_3x">
+
+                <TextView
+                    android:id="@+id/tv_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="截止到2017.01.31交售信息列表"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_larger" />
+
+                <ImageView
+                    android:id="@+id/iv_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/gap_3x"
+                    android:src="@drawable/selector_gray_arrow" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_end0131"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_end0131"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/gap_3x"
+                    android:background="@color/common_divider_narrow" />
+
+                <TextView
+                    android:id="@+id/tv_end0131_sell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingBottom="@dimen/gap_3x"
+                    android:paddingLeft="@dimen/gap_3x"
+                    android:paddingRight="@dimen/gap_3x"
+                    android:paddingTop="@dimen/gap"
+                    android:text="截止到2016.10.31截止到2016.10.31截止到2016.10.31截止到2016.10.31截止到2016.10.31截止到2016.10.31截止到201612"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_weaker" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

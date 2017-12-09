@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/gap_3x"
+        android:text="定位城市"
+
+        android:textColor="@color/common_h2" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_locate"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_all_country"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:gravity="center"
+            android:paddingLeft="@dimen/gap_2x"
+            android:paddingRight="@dimen/gap_2x"
+            android:text="全国"
+            android:textColor="@color/common_h2"
+            android:textSize="@dimen/sp_larger"
+            android:visibility="gone"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius="3dp"
+            app:rv_strokeColor="@color/common_divider_narrow"
+            app:rv_strokeWidth="1px" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:drawableLeft="@mipmap/ic_location_gray"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/gap_2x"
+            android:paddingRight="@dimen/gap_2x"
+            android:text="定位中.."
+            android:textColor="@color/common_h2"
+            android:textSize="@dimen/sp_larger"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius="3dp"
+            app:rv_strokeColor="@color/common_divider_narrow"
+            app:rv_strokeWidth="1px" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_county"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_3x"
+            android:text="选择县区" />
+
+        <com.laoodao.smartagri.view.cityselector.widget.WrapHeightGridView
+            android:id="@+id/grid_current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gap_2x"
+            android:layout_marginTop="@dimen/gap"
+            android:cacheColorHint="@android:color/transparent"
+            android:horizontalSpacing="12dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:paddingLeft="16dp"
+            android:paddingRight="35dp"
+            android:scrollbars="none"
+            android:verticalSpacing="12dp" />
+    </LinearLayout>
+</LinearLayout>

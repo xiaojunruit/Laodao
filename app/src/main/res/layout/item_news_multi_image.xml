@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:lines="2"
+        android:text="浙江安吉县:18个家庭农场如何带火一个经济薄弱村"
+        android:textColor="@color/common_h1"
+        android:textSize="@dimen/sp_larger" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@mipmap/ic_test" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/gap"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@mipmap/ic_test" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/gap"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@mipmap/ic_test" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="3">-->
+
+    <!--</LinearLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_2x">
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:text="中国养殖网"
+            android:textSize="@dimen/sp_weak" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/tv_from"
+            android:text="30分钟前"
+            android:textSize="@dimen/sp_weak" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:paddingBottom="1dp"
+            android:paddingLeft="@dimen/gap"
+            android:paddingRight="@dimen/gap"
+            android:paddingTop="1dp"
+            android:text="国家政策"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_small"
+            app:rv_cornerRadius="2dp"
+            app:rv_strokeColor="@color/colorAccent"
+            app:rv_strokeWidth="1px" />
+    </RelativeLayout>
+</LinearLayout>

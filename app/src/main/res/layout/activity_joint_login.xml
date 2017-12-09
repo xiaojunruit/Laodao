@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.JointLoginActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/gap_3x"
+        android:paddingRight="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_2x">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@mipmap/bg_joint_login"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:civ_border_color="#33e7fbf0"
+                app:civ_border_width="3dp"
+                tools:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                tools:text="尊敬的qq用户：李先生" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="为了给您更好的服务，请关联一个劳道账号" />
+
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:gravity="center"
+            android:paddingBottom="@dimen/gap_2x"
+            android:paddingRight="@dimen/gap_3x"
+            android:paddingTop="@dimen/gap_2x"
+            android:text="快速注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_larger"
+            app:rv_backgroundColor="@color/colorAccent"
+            app:rv_cornerRadius="3dp" />
+
+        <TextView
+            android:id="@+id/tv_joint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:gravity="right"
+            android:paddingBottom="@dimen/gap_2x"
+            android:paddingTop="@dimen/gap_2x"
+            android:text="已有劳道帐户，立即关联"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

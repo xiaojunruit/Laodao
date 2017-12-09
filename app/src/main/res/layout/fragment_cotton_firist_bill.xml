@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingTop="@dimen/gap_2x">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="『2016年9月18』"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:src="@mipmap/bg_first_transaction" />
+
+        <TextView
+            android:id="@+id/tv_producer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:drawableLeft="@mipmap/icon_position"
+            android:drawablePadding="@dimen/gap"
+            android:text="提现棉业有限公司"
+            android:textColor="@color/light_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="手摘细绒棉   " />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="衣分含量" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_per_year"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold"-->
+            <!--tools:text="37.2%" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:text=" 净重" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_net_weigh"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold"-->
+            <!--tools:text="1322" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="   kg" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.laoodao.smartagri.view.TriangleView
+                android:id="@+id/triangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_3x" />
+
+        </LinearLayout>
+        <!--<FrameLayout-->
+        <!--android:layout_marginBottom="@dimen/gap_6x"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="40dp">-->
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<com.flyco.roundview.RoundTextView-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:rv_backgroundColor="@color/wathet"-->
+        <!--app:rv_isRadiusHalfHeight="true"-->
+        <!--app:rv_isWidthHeightEqual="true" />-->
+
+        <!--<com.flyco.roundview.RoundTextView-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:text="NO.1"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp"-->
+        <!--app:rv_backgroundColor="@color/colorAccent"-->
+        <!--app:rv_isRadiusHalfHeight="true"-->
+        <!--app:rv_isWidthHeightEqual="true" />-->
+        <!--</FrameLayout>-->
+
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_marginTop="30dp">-->
+
+        <!--<com.flyco.roundview.RoundTextView-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:rv_backgroundColor="@color/wathet"-->
+        <!--app:rv_isRadiusHalfHeight="true"-->
+        <!--app:rv_isWidthHeightEqual="true" />-->
+
+        <!--<com.flyco.roundview.RoundTextView-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:text="衣分\n35.2%"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp"-->
+        <!--app:rv_backgroundColor="@color/colorAccent"-->
+        <!--app:rv_isRadiusHalfHeight="true"-->
+        <!--app:rv_isWidthHeightEqual="true" />-->
+        <!--</FrameLayout>-->
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center|bottom">-->
+
+        <!--<com.flyco.roundview.RoundTextView-->
+        <!--android:layout_width="90dp"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:rv_backgroundColor="@color/wathet"-->
+        <!--app:rv_isRadiusHalfHeight="true"-->
+        <!--app:rv_isWidthHeightEqual="true" />-->
+
+        <!--<com.flyco.roundview.RoundTextView-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:text="总净重\n1540kg"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp"-->
+        <!--app:rv_backgroundColor="@color/colorAccent"-->
+        <!--app:rv_isRadiusHalfHeight="true"-->
+        <!--app:rv_isWidthHeightEqual="true" />-->
+        <!--</FrameLayout>-->
+        <!--</FrameLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/aqua"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/gap_3x"
+        android:paddingTop="@dimen/gap_3x">
+
+        <TextView
+            android:id="@+id/tv_by_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="全年在巴楚泰昌棉业有限公司"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_3x"
+            android:gravity="center"
+            android:text="交售25次,共454855kg籽棉,占全年交售总额的65%"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

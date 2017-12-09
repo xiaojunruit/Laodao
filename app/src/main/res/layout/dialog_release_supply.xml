@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/background"
+        app:rv_backgroundColor="@color/background"
+        app:rv_cornerRadius_TL="20dp"
+        app:rv_cornerRadius_TR="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/gap_3x"
+            android:paddingRight="@dimen/gap_3x"
+            android:src="@mipmap/ic_close_dialog" />
+    </com.flyco.roundview.RoundFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/gap_5x"
+        android:paddingTop="@dimen/gap_5x">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.laoodao.smartagri.view.IconButton
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:ib_gap="@dimen/gap"
+                app:ib_iconSize="60dp"
+                app:ib_icon_src="@mipmap/ic_release_supply"
+                app:ib_textColor="@color/common_h2"
+                app:ib_textSize="@dimen/sp_larger"
+                app:ib_title="发布求购" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.laoodao.smartagri.view.IconButton
+                android:id="@+id/btn_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:ib_gap="@dimen/gap"
+                app:ib_iconSize="60dp"
+                app:ib_icon_src="@mipmap/ic_release_demand"
+                app:ib_textColor="@color/common_h2"
+                app:ib_textSize="@dimen/sp_larger"
+                app:ib_title="发布供销" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_6x">
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@mipmap/bg_in_settle" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_2x"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger"
+            tools:text="等待付款" />
+    </LinearLayout>
+
+    <include layout="@layout/widget_view_line" />
+
+    <LinearLayout
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/gap_3x">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/gap"
+            android:paddingTop="1dp"
+            android:src="@mipmap/ic_order_perate" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/gap_3x">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_larger"
+                tools:text="新增贷款订单，贷款订单：4000元" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap"
+                android:textColor="@color/common_h3"
+                android:textSize="@dimen/sp_weaker"
+                tools:text="2017-02-02" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_right_arrow" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_h2"
+            tools:text="订单号码：46546465as465f46" />
+
+        <TextView
+            android:id="@+id/tv_sale_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:textColor="@color/common_h2"
+            tools:text="销售日期：2014-02-05" />
+
+        <TextView
+            android:id="@+id/tv_down_payments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:textColor="@color/common_h2"
+            tools:text="首付金额：4000元" />
+
+        <TextView
+            android:id="@+id/tv_order_total_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:textColor="@color/common_h2"
+            tools:text="订单总额：4000元" />
+
+        <TextView
+            android:id="@+id/tv_actual_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:textColor="@color/common_h2"
+            tools:text="实付金额：4000元" />
+
+        <TextView
+            android:id="@+id/tv_sell_redit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:textColor="@color/common_h2"
+            tools:text="已付金额：0元" />
+
+        <TextView
+            android:id="@+id/tv_repayments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap"
+            android:textColor="@color/common_h2"
+            tools:text="已还款：0元" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/gap_2x"
+            android:paddingLeft="@dimen/gap_3x"
+            android:paddingRight="@dimen/gap_3x"
+            android:paddingTop="@dimen/gap_2x"
+            android:text="订单信息"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/sp_larger" />
+
+        <include layout="@layout/widget_view_line" />
+    </LinearLayout>
+</LinearLayout>

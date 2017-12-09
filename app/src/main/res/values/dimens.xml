@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_tab_height">48dp</dimen>
+    <dimen name="sp_operation">16sp</dimen>
+
+
+    <dimen name="sp_hint">10sp</dimen>
+    <dimen name="sp_small">11sp</dimen>
+    <dimen name="sp_weak">12sp</dimen>
+    <dimen name="sp_weaker">13sp</dimen>
+    <dimen name="sp_default">14sp</dimen>
+    <dimen name="sp_middle">15sp</dimen>
+    <dimen name="sp_larger">16sp</dimen>
+    <dimen name="sp_title">18sp</dimen>
+    <dimen name="sp_micro_big_title">20sp</dimen>
+    <dimen name="sp_big_title">22sp</dimen>
+
+
+    <dimen name="menu_tab_height">40dp</dimen>
+    <dimen name="tab_height">50dp</dimen>
+    <dimen name="select_layout">44dp</dimen>
+    <dimen name="toolbarHeight">48dp</dimen>
+
+    <dimen name="gap">5dp</dimen>
+    <dimen name="gap_2x">10dp</dimen>
+    <dimen name="gap_3x">15dp</dimen>
+    <dimen name="gap_4x">20dp</dimen>
+    <dimen name="gap_5x">25dp</dimen>
+    <dimen name="gap_6x">30dp</dimen>
+    <dimen name="gap_8x">40dp</dimen>
+    <dimen name="gap_14x">70dp</dimen>
+</resources>

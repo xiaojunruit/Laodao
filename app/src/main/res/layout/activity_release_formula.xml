@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <EditText
+        android:id="@+id/et_crop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="作物名称"
+        android:padding="@dimen/gap_3x"
+        android:textColorHint="@color/default_hint"
+        android:textSize="@dimen/sp_default" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+    <EditText
+        android:id="@+id/et_disease_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="病害名称"
+        android:padding="@dimen/gap_3x"
+        android:textColorHint="@color/default_hint"
+        android:textSize="@dimen/sp_default" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/common_divider_narrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/gap_3x">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="防止方法："
+            android:textColor="@color/common_h1" />
+
+        <EditText
+            android:id="@+id/et_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请按防法药剂+稀释倍数+防法次数+间隔时间格式填写"
+            android:textColorHint="@color/default_hint"
+            android:textSize="@dimen/sp_default" />
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_larger"
+        app:rv_backgroundColor="@color/colorAccent"
+        app:rv_cornerRadius="3dp" />
+
+
+</LinearLayout>

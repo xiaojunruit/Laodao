@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ejz.imageSelector.widget.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginRight="@dimen/gap"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_camera" />
+
+</com.ejz.imageSelector.widget.SquareRelativeLayout>

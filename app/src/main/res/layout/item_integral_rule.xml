@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/gap_3x"
+    android:paddingRight="@dimen/gap_3x"
+    android:paddingTop="@dimen/gap_2x">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_rule"
+        android:orientation="horizontal">
+
+
+
+
+        <TextView
+            android:id="@+id/tv_left_tile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="签到"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/gap"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_left_tile"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="asdfsdfdsf"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_larger" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap"
+                />
+
+            <TextView
+                android:id="@+id/tv_be_careful"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_2x"
+                android:text="注：奥斯卡福利始的乐福卡"
+                android:textColor="@color/light_red" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

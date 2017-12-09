@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:id="@+id/fl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_2x"
+        android:layout_marginLeft="@dimen/gap_3x"
+        android:layout_marginRight="@dimen/gap_3x"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingLeft="@dimen/gap"
+        android:paddingRight="@dimen/gap"
+        android:paddingTop="@dimen/gap_2x"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius="@dimen/gap">
+
+        <EditText
+            android:id="@+id/et_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_search_gray"
+            android:drawablePadding="@dimen/gap"
+            android:hint="搜索你感兴趣的作物"
+            android:imeOptions="actionNone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/common_h2" />
+    </com.flyco.roundview.RoundFrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/gap"
+            android:drawableTop="@mipmap/ic_empty1"
+            android:gravity="center_horizontal"
+            android:text="暂无关注作物" />
+    </FrameLayout>
+
+    <com.ejz.multistateview.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="loading">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gap_2x"
+                    android:background="@drawable/bg_white_line_gray"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/gap_3x"
+                    android:text="搜索:"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_no_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="@dimen/gap_2x"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="查询结果不存在"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcy_search_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gap_2x"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_noteworthy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gap_3x"
+                        android:text="值得关注"
+                        android:textColor="@color/common_h2"
+                        android:textSize="@dimen/sp_larger" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.ejz.xrecyclerview.XRecyclerView
+                            android:id="@id/recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/gap_2x" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.ejz.multistateview.MultiStateView>
+</LinearLayout>

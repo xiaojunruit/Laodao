@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.user.activity.TradeRecordDetailActivity">
+
+    <include layout="@layout/_widget_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/detail_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/gap_3x">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看交易订单详情"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_larger" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@mipmap/ic_right_arrow" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/transaction_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/gap_3x"
+                android:paddingRight="@dimen/gap_3x"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_store_name"
+                    style="@style/Tv.LoanRecord"
+                    tools:text="门店名称：味道农资店" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_store_controller"
+                        style="@style/Tv.LoanRecord"
+                        tools:text="门店负责人：阿斯蒂芬" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        style="@style/Tv.LoanRecord"
+                        android:layout_gravity="right"
+                        tools:text="联系电话：4446465464" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_trade_money"
+                    style="@style/Tv.LoanRecord"
+                    android:layout_marginBottom="@dimen/gap_2x"
+                    tools:text="交易金额：300000000" />
+
+
+                <include layout="@layout/widget_view_line" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_total_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="8dp"
+                    android:text="合计：54616466464"
+                    android:textColor="@color/common_h3"
+                    android:textSize="@dimen/sp_weak" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_2x"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/gap_3x"
+                android:paddingRight="@dimen/gap_3x">
+
+                <LinearLayout
+                    style="@style/UI.Group"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/UI.Tv"
+                        android:text="订单编号" />
+
+                    <TextView
+                        android:id="@+id/tv_order_num"
+                        style="@style/UI.Tv"
+                        android:textColor="@color/common_h2"
+                        android:textSize="@dimen/sp_weaker"
+                        tools:text="1234561211641" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/UI.Group"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/UI.Tv"
+                        android:text="订单金额" />
+
+                    <TextView
+                        android:id="@+id/tv_order_money"
+                        style="@style/UI.Tv"
+                        android:textColor="@color/light_red"
+                        android:textSize="@dimen/sp_weaker"
+                        tools:text="1234561211641" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/UI.Group"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/UI.Tv"
+                        android:text="交易时间" />
+
+                    <TextView
+                        android:id="@+id/tv_trade_time"
+                        style="@style/UI.Tv"
+                        android:textColor="@color/common_h2"
+                        android:textSize="@dimen/sp_weaker"
+                        tools:text="2016-05-05" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/UI.Group"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/UI.Tv"
+                        android:text="可用额度" />
+
+                    <TextView
+                        android:id="@+id/tv_available_credit"
+                        style="@style/UI.Tv"
+                        android:textColor="@color/common_h2"
+                        android:textSize="@dimen/sp_weaker"
+                        tools:text="20165461256" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/UI.Group"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="0dp">
+
+                    <TextView
+                        style="@style/UI.Tv"
+                        android:text="验证码" />
+
+
+                    <EditText
+                        android:id="@+id/et_code"
+                        style="@style/UI.Et"
+                        android:layout_marginLeft="@dimen/gap_3x"
+                        android:layout_marginRight="0dp"
+                        android:hint="请输入手机验证码" />
+
+                    <TextView
+                        android:id="@+id/tv_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="获取短信验证码"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sp_larger" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tv_submit"
+                style="@style/Button.Round"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gap_3x"
+                android:layout_marginRight="@dimen/gap_3x"
+                android:layout_marginTop="@dimen/gap_3x"
+                android:paddingBottom="@dimen/gap_2x"
+                android:paddingTop="@dimen/gap_2x"
+                android:text="确认付款"
+                app:rv_cornerRadius="3dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

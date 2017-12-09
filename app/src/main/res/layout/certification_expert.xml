@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:textColor="@color/common_h1"
+        tools:text="*擅长领域" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/field_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/gap_2x"
+        android:background="@drawable/bg_dotted_line"
+        android:hapticFeedbackEnabled="false"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/tv_crop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/gap_2x"
+        android:paddingTop="@dimen/gap_2x"
+        android:textColor="@color/common_h1"
+        tools:text="*擅长作物" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/crop_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="-15dp" />
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:id="@+id/rtv_add_crop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_3x"
+        android:padding="@dimen/gap_2x"
+        app:rv_cornerRadius="2dp"
+        app:rv_strokeColor="@color/colorAccent"
+        app:rv_strokeWidth="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_add_blue"
+            android:drawablePadding="@dimen/gap"
+            android:text="点击添加擅长作物"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_default" />
+    </com.flyco.roundview.RoundFrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_dotted_line"
+        android:hapticFeedbackEnabled="false"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/tv_id_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingTop="@dimen/gap_2x"
+        android:textColor="@color/common_h1"
+        tools:text="*上传身份证" />
+
+    <ImageView
+        android:id="@+id/iv_id_card"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_id_card" />
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:id="@+id/rtv_add_identity_certificate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_3x"
+        android:padding="@dimen/gap_2x"
+        app:rv_cornerRadius="2dp"
+        app:rv_strokeColor="@color/colorAccent"
+        app:rv_strokeWidth="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/ic_add_blue"
+            android:drawablePadding="@dimen/gap"
+            android:text="点击选择上传照片"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_default" />
+    </com.flyco.roundview.RoundFrameLayout>
+</LinearLayout>

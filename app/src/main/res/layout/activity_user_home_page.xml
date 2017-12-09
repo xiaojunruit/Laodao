@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.ejz.multistateview.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:msv_viewState="content">
+
+            <com.ejz.xrecyclerview.XRecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.ejz.multistateview.MultiStateView>
+
+        <FrameLayout
+            android:id="@+id/fl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbarHeight">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gap_3x"
+                android:src="@mipmap/ic_back" />
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="@dimen/gap_3x"
+                android:src="@mipmap/ic_share_white" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/fl_all_dynamic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_menu_all_back"
+                android:drawablePadding="@dimen/gap"
+                android:gravity="center_vertical"
+                android:text="全部动态"
+                android:textColor="@color/common_h1" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/gap_3x"
+            android:layout_marginTop="@dimen/gap_3x"
+            android:background="#939393" />
+
+        <FrameLayout
+            android:id="@+id/fl_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_msg_back"
+                android:drawablePadding="@dimen/gap"
+                android:gravity="center_vertical"
+                android:textColor="@color/common_h1"
+                tools:text="聊天" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/gap_3x"
+            android:layout_marginTop="@dimen/gap_3x"
+            android:background="#939393" />
+
+        <FrameLayout
+            android:id="@+id/fl_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_add_black"
+                android:drawablePadding="@dimen/gap"
+                android:gravity="center_vertical"
+                android:textColor="@color/common_h1"
+                tools:text="关注" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
